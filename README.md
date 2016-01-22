@@ -5,6 +5,9 @@ The Triangle Ghost theme is built as a solid foundation for any project. This th
 If you like our work - <a href="https://www.gittip.com/HaeckDesign/" title="GitTip">buy us a beer</a>, <a href="http://haeckdesign.com/contact/social" title="Social Media - Haeck Design">give us a follow</a>, or check out our premium <a href="http://demo.haeckdesign.com/triangle/" title="Triangle Ghost Theme - Haeck Design">"Golden Triangle" version</a> with a few added bells and whistles. If you need a solid developer for your project feel free to <a href="http://haeckdesign.com/contact" title="Project Request - Haeck Design">submit a project request</a> and we can get you an estimate in short time.
 
 
+![Thumbnail](http://haeck.s3.amazonaws.com/triangle/Triangle-Ghost-Theme-Mockup-Haeck-Design.jpg)
+
+
 ## Built with: ##
 
 **Ghost (v0.7.2):** https://ghost.org/
@@ -34,12 +37,10 @@ If you like our work - <a href="https://www.gittip.com/HaeckDesign/" title="GitT
 * StockSnap.io: https://stocksnap.io
 
 
-![Thumbnail](http://haeck.s3.amazonaws.com/triangle/Triangle-Ghost-Theme-Mockup-Haeck-Design.jpg)
-
 
 ### Customization ###
 
-There are 5 basic steps to making this theme your own...
+There are 4 basic steps to making this theme your own...
 
 1. **Install your theme.**  Unzip your package and drop it in your theme folder. Enable it on the "General" settings page.
 
@@ -54,7 +55,7 @@ There are 5 basic steps to making this theme your own...
 #### Support Resources ####
 
 Submit Bugs:  https://github.com/HaeckDesign/Triangle/issues
-
+Project Page:  http://haeckdesign.com/freebies/themes/triangle-ghost-theme
 
 
 ![Thumbnail](http://haeck.s3.amazonaws.com/triangle/Triangle-Ghost-Theme-Screenshot-Haeck-Design.jpg)
