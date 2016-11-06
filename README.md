@@ -2,8 +2,6 @@
 
 The Triangle Ghost theme is built as a solid foundation for any project. This theme can serve as a starting point for advanced web developers, while also providing a clean design for those who prefer to grow their style organically over time. We have released this theme under Creative Commons license and only ask that you retain the links to Ghost and Haeck Design for our efforts. We cannot supply support with this theme (being that it is free and we all have bills), but please feel free to submit any bugs and we will take them in to consideration on future revisions. 
 
-If you like our work - <a href="https://www.gittip.com/HaeckDesign/" title="GitTip">buy us a beer</a>, <a href="http://haeckdesign.com/contact/social" title="Social Media - Haeck Design">give us a follow</a>, or check out our premium <a href="http://demo.haeckdesign.com/triangle/" title="Triangle Ghost Theme - Haeck Design">"Golden Triangle" version</a> with a few added bells and whistles. If you need a solid developer for your project feel free to <a href="http://haeckdesign.com/contact" title="Project Request - Haeck Design">submit a project request</a> and we can get you an estimate in short time.
-
 
 ![Thumbnail](http://haeck.s3.amazonaws.com/triangle/Triangle-Ghost-Theme-Mockup-Haeck-Design.jpg)
 
@@ -51,15 +49,15 @@ There are 4 basic steps to making this theme your own...
 4. **Fill in Menu Items.**  Start simple, then expand. These items will appear in your navigation and the dropdown that appears on mobile devices (shrink your screen width to see).
 
 
+![Thumbnail](https://haeck.s3.amazonaws.com/triangle/Triangle-Ghost-Theme-Screenshot-Haeck-Design.jpg)
+
+If you like our work - <a href="https://www.gittip.com/HaeckDesign/" title="GitTip" rel="nofollow">buy us a beer</a>, <a href="https://haeckdesign.com/contact/social" title="Social Media - Haeck Design">give us a follow</a>, or check out our premium <a href="https://demo.haeckdesign.com/triangle/golden" title="Golden Triangle Ghost Theme - Haeck Design">"Golden Triangle" version</a> with a few added bells and whistles. If you'd like to find more <a href="Amazing Free Ghost Themes">amazing free ghost themes</a>, give that post a quick look. If you need a solid developer for your project feel free to <a href="https://haeckdesign.com/contact" title="Project Request - Haeck Design">submit a project request</a> and we can get you an estimate in short time.
+
 
 #### Support Resources ####
 
-Submit Bugs:  https://github.com/HaeckDesign/Triangle/issues
-Project Page:  http://haeckdesign.com/freebies/themes/triangle-ghost-theme
-
-
-![Thumbnail](http://haeck.s3.amazonaws.com/triangle/Triangle-Ghost-Theme-Screenshot-Haeck-Design.jpg)
-
+* Submit Bugs:  https://github.com/HaeckDesign/Triangle/issues
+* Project Page:  https://haeckdesign.com/freebies/themes/triangle-ghost-theme
 
 
 #### Version 0.1 ####
