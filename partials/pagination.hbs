@@ -1,17 +1,24 @@
 
-<div class="uk-width-1-1 uk-margin-top uk-clearfix">
-<hr class="uk-article-divider" />
-	<div class="uk-article-meta uk-text-center uk-margin-small">Page {{page}} of {{pages}}</div>
-	<ul class="uk-pagination uk-margin-remove">
-    {{#if prev}}
-    <li class="uk-pagination-previous">
-    	<a href="{{page_url prev}}" title="Newer Post" data-uk-scrollspy="{cls:'uk-animation-fade'}"><i class="uk-icon-chevron-left uk-margin-right"></i>Newer</a>
-    </li>
-    {{/if}}
-    {{#if next}}
-    <li class="uk-pagination-next">
-    	<a href="{{page_url next}}" title="Older Post" data-uk-scrollspy="{cls:'uk-animation-fade'}">Older<i class="uk-icon-chevron-right uk-margin-left"></i></a>
-    </li>
-    {{/if}}
-	</ul>
-</div>
+<hr class="uk-article-divider uk-margin-medium-top" />
+
+<ul class="uk-pagination uk-flex uk-flex-center uk-flex-middle uk-flex-between">
+{{#if prev}}
+<li class="uk-pagination-previous">
+	<a href="{{page_url prev}}" title="Newer Post" class="uk-button uk-button-default"><span data-uk-icon="icon:triangle-left"></span>&nbsp;Newer</a>
+</li>
+{{else}}
+<li class="uk-pagination-previous">
+	<button class="uk-button uk-button-default" disabled><span data-uk-icon="icon:triangle-left"></span>&nbsp;Newer</button>
+</li>
+{{/if}}
+<li class="uk-visible@s">Page {{page}} of {{pages}}</li>
+{{#if next}}
+<li class="uk-pagination-next">
+	<a href="{{page_url next}}" title="Older Post" class="uk-button uk-button-default">Older&nbsp;<span data-uk-icon="icon:triangle-right"></span></a>
+</li>
+{{else}}
+<li class="uk-pagination-next">
+	<button class="uk-button uk-button-default" disabled>Older&nbsp;<span data-uk-icon="icon:triangle-right"></span></button>
+</li> 
+{{/if}}
+</ul>

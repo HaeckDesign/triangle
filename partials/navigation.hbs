@@ -1,27 +1,35 @@
 
-<nav class="uk-navbar uk-navbar-attached" data-uk-sticky>
+<div data-uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+<nav class="uk-navbar uk-navbar-container uk-navbar-attached shadedown" data-uk-navbar>
+<div class="uk-navbar-left">
 {{#if @blog.logo}}
-<a href="{{@blog.url}}" title="{{@blog.title}}">
-	<img src="{{@blog.logo}}" alt="{{@blog.title}} Logo" title="{{@blog.title}} Logo" class="uk-navbar-brand" />
+<a href="{{@blog.url}}" title="{{@blog.title}}" class="uk-navbar-item">
+	<img src="{{@blog.logo}}" alt="{{@blog.title}} Logo" title="{{@blog.title}} Logo" class="uk-logo" />
 </a>
 {{else}}
-	<a href="{{@blog.url}}" title="{{@blog.title}}" class="uk-navbar-brand">{{@blog.title}}</a>
+	<a href="{{@blog.url}}" title="{{@blog.title}}" class="uk-navbar-item uk-logo">{{@blog.title}}</a>
 {{/if}}
-<div class="uk-navbar-flip">	
+</div>
+
+<div class="uk-navbar-right">	
 	<ul class="uk-navbar-nav">
 	{{#foreach navigation}}
-    	<li class="{{#if current}} uk-active{{/if}} uk-hidden-small" role="presentation"><a href="{{url absolute="true"}}" title="{{label}}">{{label}}</a></li>
+    	<li class="{{#if current}} uk-active{{/if}} uk-visible@m" role="presentation"><a href="{{url absolute="true"}}" title="{{label}}">{{label}}</a></li>
 	{{/foreach}}
-		<li class="uk-parent uk-visible-small" data-uk-dropdown>
-		<a class="uk-animation-hover" data-uk-dropdown="{mode:'click'}"><i class="uk-icon-bars uk-animation-reverse uk-animation-scale uk-text-muted"></i></a>
-		<div class="uk-dropdown uk-dropdown-navbar">
-		<ul class="uk-nav uk-nav-navbar uk-text-center">    
-		{{#foreach navigation}}
-		<li role="presentation"><a href="{{url absolute="true"}}" title="{{label}}">{{label}}</a></li>
-		{{/foreach}}
-		</ul>
-		</div>
-		</li>	
+	
+		<li class="uk-hidden@m">
+		<a class="uk-navbar-toggle" uk-navbar-toggle-icon href="#"></a>
+		<div class="uk-navbar-dropdown">
+            <ul class="uk-nav uk-navbar-dropdown-nav">
+			
+				{{#foreach navigation}}
+			    	<li class="{{#if current}} uk-active{{/if}} " role="presentation"><a href="{{url absolute="true"}}" title="{{label}}">{{label}}</a></li>
+				{{/foreach}}
+
+            </ul>
+        </div>
+		</li>
 	</ul>
 </div>
 </nav>
+</div>

@@ -1,0 +1,24 @@
+
+<div class="uk-section uk-section-small uk-container uk-margin-large-top uk-width-5-6@m uk-flex uk-flex-wrap uk-flex-between uk-flex-middle">
+	<div class="uk-width-expand@m" data-uk-margin>
+		<div class="uk-flex uk-flex-wrap uk-flex-between uk-flex-middle uk-heading-divider">
+		<h5 class="uk-text-lead uk-text-default uk-margin-remove">{{name}}</h5>
+		{{#if location}}<span class="uk-article-meta uk-text-muted">{{location}}</span>{{/if}}
+		</div>
+{{#if bio}}
+	<p class="uk-margin-small uk-text-center uk-text-left@s">{{bio}}.
+	<a href="{{url}}" title="More About {{name}}" class="uk-text-meta uk-display-block uk-margin-small-top">More About {{name}}</a></p>
+{{else}}
+	<p class="uk-margin-small">Read <a href="{{url}}">more posts</a> by this author.</p>
+{{/if}}
+	</div>
+{{#if profile_image}}
+
+<div class="uk-width-1-5@s bioimgframe uk-padding-small">
+	<div class="bioimg">
+	<img src="{{img_url profile_image}}" alt="{{name}} Profile Picture" title="{{name}} Profile Picture" class="uk-border-circle uk-height-1-1 uk-box-shadow-small" />
+	</div>
+</div>
+
+{{/if}}
+</div>

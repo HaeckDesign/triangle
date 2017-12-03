@@ -1,4 +1,39 @@
 {
-  "name": "Triangle Ghost Theme",
-  "version": "0.1"
+    "name": "triangle",
+    "description": "The Triangle Ghost Theme is a clean & responsive theme built for Ghost CMS. This minimal Ghost theme features a UIKit core, responsive layout, fixed menu, Disqus comments, slick animations and much more.",
+    "demo": "https://demo.haeckdesign.com/triangle",
+    "version": "2.0.0",
+    "engines": {
+        "ghost": ">=1.2.0"
+    },
+    "license": "MIT",
+    "screenshots": {
+        "desktop": "assets/screenshot-desktop.jpg",
+        "mobile": "assets/screenshot-mobile.jpg"
+    },
+    "author": {
+        "name": "Haeck Design",
+        "email": "inbox@haeckdesign.com",
+        "url": "https://haeckdesign.com"
+    },
+    "gpm": {
+        "type": "theme",
+        "categories": [
+            "Minimal",
+            "Magazine"
+        ]
+    },
+    "keywords": [
+        "triangle",
+        "ghost",
+        "theme"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/HaeckDesign/triangle.git"
+    },
+    "bugs": "https://github.com/HaeckDesign/triangle/issues",
+    "config": {
+        "posts_per_page": 6
+    }
 }

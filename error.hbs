@@ -1,50 +1,38 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]><html lang="en-US" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if (IE 7)&!(IEMobile)]><html lang="en-US" class="no-js lt-ie9 lt-ie8"><![endif]-->
-<!--[if (IE 8)&!(IEMobile)]><html lang="en-US" class="no-js lt-ie9"><![endif]-->
-<!--[if gt IE 8]><!-->
-<html lang="en-US" class="uk-height-1-1">
-<!--<![endif]-->
-
+<html>
 <head>
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-<title>404 Error | {{@blog.title}}</title>
-<meta name="description" content="404 Error - Sorry that page cannot be found.">
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<title>{{code}} Error | {{@blog.title}}</title>
+<meta name="description" content="{{code}} Error - Sorry that page cannot be found.">
 <meta name="HandheldFriendly" content="True">
 <meta name="MobileOptimized" content="320">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="robots" content="noindex,nofollow">
+<meta name="robots" content="noindex,follow">
 <link rel="icon" href="{{asset "/favicon.ico"}}">
 <link rel="apple-touch-icon" href="{{asset "/apple-icon-touch.png"}}">
-<link rel="stylesheet" id="linen-stylesheet-css" href="{{asset "css/uikit.min.css"}}" type="text/css" media="all">
-<link rel="stylesheet" id="linen-stylesheet-css" href="{{asset "css/custom.css"}}" type="text/css" media="all">
-<!--[if IE]><link rel="shortcut icon" href="{{asset "/favicon.ico"}}"><![endif]-->
-<!--[if lt IE 9]>
-<script type="text/javascript" src="{{asset "js/html5shiv.js"}}"></script>
-<script type="text/javascript" src="{{asset "js/css3-mediaqueries.js"}}"></script>
-<script type="text/javascript" src="{{asset "js/selectivizr-min.js"}}"></script>
-<![endif]-->
+<link rel="alternate" href="{{@blog.url}}/rss/" title="{{@blog.title}} » Feed" type="application/rss+xml">
+<!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:700" type="text/css"> -->
+<link rel="stylesheet" href="{{asset "css/uikit.triangle.min.css"}}" id="base-stylesheet-css" type="text/css">
 {{ghost_head}}
 </head>
 
-<body class="uk-height-1-1 uk-panel-box-secondary">
-<div class="uk-vertical-align uk-text-center uk-height-1-1 shade2">
-	<div class="uk-vertical-align-middle" style="width: 340px;">
-
-    {{#if @blog.logo}}
-	<img src="{{@blog.logo}}" alt="{{@blog.title}} Logo" title="{{@blog.title}} Logo" class="uk-margin uk-margin-top uk-width-3-5 uk-container-center" />
-    {{/if}}
-
-		<div class="uk-panel uk-panel-space uk-panel-box uk-text-center">
-			<div>
-				<div>
-				<h1>{{code}} Error</h1><hr />
-				<h2 class="uk-h4 uk-text-muted uk-margin-top">{{message}}</h2>
-				<a class="uk-button uk-margin-top uk-width-1-1" href="{{@blog.url}}" title="{{@blog.title}}">Go to Homepage →</a>
-				</div>
+<body class="uk-height-viewport uk-flex uk-flex-middle uk-flex-center uk-background-secondary">
+<div class="uk-width-4-5 uk-width-1-2@s uk-width-1-3@m uk-width-1-4@l uk-box-shadow-bottom">
+	<div class="uk-card uk-card-default">
+	    {{#if @blog.logo}}
+	    <div class="uk-card-header uk-card-media-top">
+			<img src="{{@blog.logo}}" alt="{{@blog.title}} Logo" title="{{@blog.title}} Logo" class="uk-width-1-1" />
+	    </div>
+	    {{/if}}
+		<div class="uk-card-body">
+			<h1 class="uk-card-title uk-text-center uk-margin-remove">{{code}} Error</h1>
+			<h2 class="uk-text-meta uk-text-center uk-margin-remove">{{message}}</h2>
+		</div>
+		<div class="uk-card-footer">
+				<a class="uk-button uk-button-default uk-width-1-1" href="{{@blog.url}}" title="{{@blog.title}}">Go to Homepage</a>
 			</div>
-		</div>		
+		</div>
 	</div>
 </div>
 </body>
