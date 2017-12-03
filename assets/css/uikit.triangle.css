@@ -4299,7 +4299,6 @@ ul.uk-nav-sub {
   background: #eaeaea;
   color: #626262;
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.16);
-  text-align: center;
 }
 /* Show */
 .uk-navbar-dropdown.uk-open {
@@ -4369,6 +4368,7 @@ ul.uk-nav-sub {
  ========================================================================== */
 .uk-navbar-dropdown-nav {
   font-size: 0.875rem;
+  text-align: center;
 }
 /*
  * Items
@@ -4422,7 +4422,7 @@ ul.uk-nav-sub {
   z-index: 1020;
   left: 0;
   right: 0;
-  box-shadow: 0 5px 7px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.16);
 }
 /*
      * Navbar
@@ -8607,7 +8607,6 @@ iframe.uk-cover {
   color: #626262;
   /* 1 */
   text-decoration: none;
-  max-height: 38px;
 }
 /* Hover + Focus */
 .uk-logo:hover,
@@ -8756,6 +8755,9 @@ iframe.uk-cover {
 .uk-transform-origin-bottom-right {
   -webkit-transform-origin: 100% 100%;
   transform-origin: 100% 100%;
+}
+.uk-navbar img.uk-logo {
+  max-height: 38px;
 }
 .shade1 {
   border-radius: 0;
