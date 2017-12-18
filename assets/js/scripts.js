@@ -1,11 +1,9 @@
+{{!--  Include Additional Javascripts Below and Uncomment on default.hbs --}}
 
-// Please be careful and test changes locally.   
-
-(function ($, undefined) {
-	"use strict";
-
+(function ($, undefined) { "use strict";
 var $document = $(document);
 	$document.ready(function () {
+
 
 });
 })(jQuery);

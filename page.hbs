@@ -3,9 +3,9 @@
 
 {{#if feature_image}}
 <div class="uk-cover-container uk-height-medium uk-clearfix">
-<img src="{{img_url feature_image}}" title="{{title}}" alt="{{title}}" data-uk-cover />
+<img src="{{img_url feature_image}}" title="{{title}}" alt="{{title}}" class="uk-width-1-1" data-uk-cover />
 	<div class="uk-overlay uk-overlay-primary uk-position-cover uk-light">
-		<div class="uk-width-5-6@s uk-width-4-5@m uk-width-2-3@l uk-container uk-container-center uk-position-bottom uk-margin-medium-bottom uk-animation-slide-bottom">
+		<div class="uk-width-5-6@s uk-width-4-5@m uk-width-3-5@l uk-container uk-container-center uk-position-bottom uk-margin-medium-bottom uk-animation-slide-bottom">
 			<h1 class="uk-article-title uk-heading-divider">{{title}}</h1>
 			<p class="uk-article-meta uk-margin-small-top">Written on
 				<time datetime="{{date format="YYYY-MM-DD"}}" content="{{date format="YYYY-MM-DD"}}">
@@ -18,7 +18,7 @@
 {{/if}}	
 
 <div class="uk-section uk-clearfix shade1">
-<article class="uk-width-5-6@s uk-width-4-5@m uk-width-2-3@l uk-container uk-container-center uk-margin uk-article uk-clearfix {{post_class}}" role="main">
+<article class="uk-width-5-6@s uk-width-4-5@m uk-width-3-5@l uk-container uk-container-center uk-margin uk-article uk-clearfix {{post_class}}" role="main">
 
 {{^if feature_image}}
 	<h1 class="uk-article-title uk-margin-small">{{title}}</h1><hr class="uk-article-divider uk-margin-small" />
@@ -29,12 +29,8 @@
 	</p>		
 {{/if}}	
 
-<div class="dropcap uk-article-lead">
 {{content}}
-</div>              
 	
-<hr class="uk-article-divider" />
-
 {{> share}}
 			
 </article>

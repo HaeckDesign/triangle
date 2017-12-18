@@ -13,10 +13,10 @@
 <div class="uk-navbar-right">	
 	<ul class="uk-navbar-nav">
 	{{#foreach navigation}}
-    	<li class="{{#if current}} uk-active{{/if}} uk-visible@m" role="presentation"><a href="{{url absolute="true"}}" title="{{label}}">{{label}}</a></li>
+    	<li class="uk-visible@m {{#if current}}uk-active{{/if}}" role="presentation"><a href="{{url absolute="true"}}" title="{{label}}">{{label}}</a></li>
 	{{/foreach}}
 		<li class="uk-hidden@m">
-		<a class="uk-navbar-toggle" uk-navbar-toggle-icon href="#"></a>
+		<a class="uk-navbar-toggle" data-uk-navbar-toggle-icon href="#"></a>
 		<div class="uk-navbar-dropdown">
             <ul class="uk-nav uk-navbar-dropdown-nav">
 			{{#foreach navigation}}

@@ -1,13 +1,12 @@
-
 {{!< default}}
 
 {{#post}}
 
 {{#if feature_image}}
 <div class="uk-cover-container uk-height-medium uk-clearfix">
-<img src="{{img_url feature_image}}" title="{{title}}" alt="{{title}}" data-uk-cover data-uk-parallax="bgy: -400" />
+<img src="{{img_url feature_image}}" title="{{title}}" alt="{{title}}" class="uk-width-1-1" data-uk-cover />
 	<div class="uk-overlay uk-overlay-primary uk-position-cover uk-light">
-		<div class="uk-width-4-5@s uk-width-3-4@m uk-width-2-3@l uk-container uk-container-center uk-position-bottom uk-margin-medium-bottom">
+		<div class="uk-width-4-5@s uk-width-3-4@m uk-width-3-5@l uk-container uk-container-center uk-position-bottom uk-margin-medium-bottom">
 			<h1 class="uk-article-title uk-heading-divider">{{title}}</h1>
 			<p class="uk-article-meta uk-margin-small-top">Written by {{#author}}
 				<span><a href="{{url}}" title="{{name}}" class="uk-link-reset">{{name}}</a></span>{{/author}} on
@@ -21,21 +20,21 @@
 {{/if}}	
 
 <div class="uk-section uk-clearfix shade1">
-<article class="uk-width-4-5@s uk-width-3-4@m uk-width-2-3@l uk-container uk-container-center uk-article {{post_class}}" role="main">
-
+<article class="uk-width-4-5@s uk-width-3-4@m uk-width-3-5@l uk-container uk-container-center uk-article {{post_class}}" role="main">
 {{^if feature_image}}
-	<h1 class="uk-article-title uk-heading-divider">{{title}}</h1>
-	<p class="uk-text-meta uk-margin-medium-bottom"> Written by {{#author}}
-		<span><a href="{{url}}" title="{{name}}" class="uk-text-meta">{{name}}</a></span>{{/author}} on
-		<time datetime="{{date published_at format='YYYY-MM-DD'}}" content="{{date published_at format='YYYY-MM-DD'}}">
-	    {{date published_at format='MMMM, DD YYYY'}}
-		</time>
-	</p>	
+{{#if featured}}
+<span data-uk-icon="icon:bookmark;ratio:0.7" class="uk-align-right uk-margin-remove-adjacent uk-text-muted" data-uk-scrollspy="cls:uk-animation-fade;repeat:true"></span>
+{{/if}}
+<h1 class="uk-article-title uk-heading-divider">{{title}}</h1>
+<p class="uk-text-meta uk-margin-medium-bottom"> Written by {{#author}}
+	<span><a href="{{url}}" title="{{name}}" class="uk-text-meta">{{name}}</a></span>{{/author}} on
+	<time datetime="{{date published_at format='YYYY-MM-DD'}}" content="{{date published_at format='YYYY-MM-DD'}}">
+    {{date published_at format='MMMM, DD YYYY'}}
+	</time>
+</p>	
 {{/if}}	
 
-<div class="uk-dropcap">
 {{content}}
-</div>
 
 {{#if tags}}
 {{> tags}}
@@ -48,7 +47,8 @@
 {{> authorbio}}
 {{/author}}
 
-<!-- {{> disqus}} -->
+{{!--  Disqus Comments - Uncomment and include your site-id --}}
+{{!--  {{> disqus}}  --}}
 			
 </article>
 </div>

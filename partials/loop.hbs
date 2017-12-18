@@ -1,16 +1,15 @@
-
 {{#foreach posts}}
 <article class="uk-article {{post_class}}">
-	{{#if featured}}
-		<span class="uk-align-right uk-margin-remove-adjacent uk-text-primary" data-uk-icon="icon:bookmark" data-uk-scrollspy="cls: uk-animation-fade;repeat:true"></span>
-	{{/if}}
-	<h3 class="uk-article-title uk-heading-divider uk-margin-small">{{title}}</h3>
-	<p class="uk-article-meta uk-margin-small">
+{{#if featured}}
+<span class="uk-align-right uk-margin-remove-adjacent uk-text-primary" data-uk-icon="icon:bookmark;ratio:0.8" data-uk-scrollspy="cls:uk-animation-fade;repeat:true"></span>
+{{/if}}
+<h3 class="uk-article-title uk-heading-divider uk-margin-small">{{title}}</h3>
+<p class="uk-text-meta uk-margin-small">
 	<span>By: <span class="author">{{author.name}}</span></span> on
 	<time content="{{date published_at format='YYYY-MM-DD'}}" datetime="{{date published_at format='YYYY-MM-DD'}}">{{date published_at format='MM/DD/YYYY'}}</time>
-	</p>
-	<p>{{excerpt characters="300"}}&hellip;</p>
-	<a href="{{@blog_url}}{{url}}" title="{{title}}" class="uk-align-right uk-button uk-button-default" data-uk-icon="icon: triangle-right">Continue Reading</a>
+</p>
+<p>{{excerpt characters="260"}}&hellip;</p>
+<a href="{{@blog_url}}{{url}}" title="{{title}}" class="uk-align-right uk-button uk-button-default uk-margin-small-top" data-uk-icon="icon:triangle-right;ratio:0.75">Continue Reading&nbsp;</a>
 </article>
 {{/foreach}}
 

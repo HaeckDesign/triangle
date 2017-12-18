@@ -50,13 +50,13 @@ a:hover {
  */
 a,
 .uk-link {
-  color: #03a2c3;
+  color: #53a1c2;
   text-decoration: none;
   cursor: pointer;
 }
 a:hover,
 .uk-link:hover {
-  color: #038daa;
+  color: #4296ba;
   text-decoration: none;
 }
 /* Text-level semantics
@@ -279,17 +279,17 @@ h3,
 h4,
 .uk-h4 {
   font-size: 1.25rem;
-  line-height: 1.4;
+  line-height: 1.3em;
 }
 h5,
 .uk-h5 {
-  font-size: 16px;
-  line-height: 1.4;
+  font-size: 21px;
+  line-height: 1.32em;
 }
 h6,
 .uk-h6 {
-  font-size: 0.875rem;
-  line-height: 1.4;
+  font-size: 19px;
+  line-height: 1.34em;
 }
 /* Lists
  ========================================================================== */
@@ -2102,8 +2102,8 @@ select.uk-form-width-xsmall {
 }
 .uk-button-large {
   padding: 0 40px;
-  line-height: 2.6em;
-  font-size: 1.3em;
+  line-height: 2.2em;
+  font-size: 1.25em;
 }
 /* Text modifiers
  ========================================================================== */
@@ -2175,12 +2175,12 @@ select.uk-form-width-xsmall {
   line-height: 1.36em;
   background: none;
   /* 2 */
-  color: #03a2c3;
+  color: #53a1c2;
 }
 /* Hover + Focus */
 .uk-button-link:hover,
 .uk-button-link:focus {
-  color: #038daa;
+  color: #4296ba;
   text-decoration: underline;
 }
 /* Disabled */
@@ -4220,6 +4220,7 @@ ul.uk-nav-sub {
   transition: 0.1s ease-in-out;
   -webkit-transition-property: color, background-color;
   transition-property: color, background-color;
+  font-weight: 700;
   text-shadow: 0 1px 0 #fff;
 }
 /*
@@ -8789,20 +8790,6 @@ iframe.uk-cover {
 .shadedown {
   background: linear-gradient(to bottom, #fefefe 0%, #efefef 100%) !important;
 }
-.rounded {
-  border-radius: 6px;
-}
-.rounded-inset {
-  border-radius: 6px;
-  box-shadow: 0 0 5px rgba(255, 255, 255, 0.6), 1px 1px 1px rgba(0, 0, 0, 0.3) inset;
-}
-.uk-cover-container .uk-article-title {
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
-}
-#subscribe .uk-form .form-group {
-  padding-right: 5px;
-  width: 100%;
-}
 .grow {
   -webkit-transform: scale3d(1, 1, 1);
   transform: scale3d(1, 1, 1);
@@ -8843,6 +8830,20 @@ iframe.uk-cover {
   display: table-cell;
   text-align: center;
   vertical-align: middle;
+}
+.rounded {
+  border-radius: 6px;
+}
+.rounded-inset {
+  border-radius: 6px;
+  box-shadow: 0 0 5px rgba(255, 255, 255, 0.6), 1px 1px 1px rgba(0, 0, 0, 0.3) inset;
+}
+.uk-cover-container .uk-article-title {
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+#subscribe .uk-form .form-group {
+  padding-right: 5px;
+  width: 100%;
 }
 /* ========================================================================
    Component: Flex
