@@ -2,8 +2,8 @@
 {{#post}}
 
 {{#if feature_image}}
-<div class="uk-cover-container uk-height-medium uk-clearfix">
-<img src="{{img_url feature_image}}" title="{{title}}" alt="{{title}}" class="uk-width-1-1" data-uk-cover />
+
+<div class="uk-height-medium uk-background-cover uk-cover-container uk-clearfix" data-uk-parallax="bgy: -180" style="background-image: url('{{img_url feature_image}}');">
 	<div class="uk-overlay uk-overlay-primary uk-position-cover uk-light">
 		<div class="uk-width-5-6@s uk-width-4-5@m uk-width-3-5@l uk-container uk-container-center uk-position-bottom uk-margin-medium-bottom uk-animation-slide-bottom">
 			<h1 class="uk-article-title uk-heading-divider">{{title}}</h1>

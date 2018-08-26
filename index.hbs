@@ -1,8 +1,7 @@
 {{!< default}}
 
 {{#if @blog.cover_image}}
-<div class="uk-cover-container uk-height-medium uk-clearfix">
-<img src="{{@blog.cover_image}}" title="{{@blog.title}}" alt="{{@blog.title}}" data-uk-cover />
+<div class="uk-height-medium uk-background-cover uk-cover-container uk-clearfix" data-uk-parallax="bgy: -180" style="background-image: url('{{@blog.cover_image}}');">
 	<div class="uk-overlay uk-overlay-primary uk-position-cover uk-flex uk-flex-middle uk-flex-center uk-flex-column uk-light uk-text-center">
 		<h1 class="uk-article-title uk-margin-small">{{@blog.title}}</h1>
 		<h2 class="uk-text-meta uk-margin-small-top">

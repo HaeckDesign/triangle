@@ -3,13 +3,12 @@
 {{#post}}
 
 {{#if feature_image}}
-<div class="uk-cover-container uk-height-medium uk-clearfix">
-<img src="{{img_url feature_image}}" title="{{title}}" alt="{{title}}" class="uk-width-1-1" data-uk-cover />
+<div class="uk-height-medium uk-background-cover uk-cover-container uk-clearfix" data-uk-parallax="bgy: -180" style="background-image: url('{{img_url feature_image}}');">
 	<div class="uk-overlay uk-overlay-primary uk-position-cover uk-light">
-		<div class="uk-width-4-5@s uk-width-3-4@m uk-width-3-5@l uk-container uk-container-center uk-position-bottom uk-margin-medium-bottom">
-			<h1 class="uk-article-title uk-heading-divider">{{title}}</h1>
-			<p class="uk-article-meta uk-margin-small-top">Written by {{#author}}
-				<span><a href="{{url}}" title="{{name}}" class="uk-link-reset">{{name}}</a></span>{{/author}} on
+		<div class="uk-width-4-5@s uk-width-3-4@m uk-width-3-5@l uk-container uk-container-center uk-position-bottom uk-margin-medium-bottom uk-animation-slide-bottom">
+			<h1 class="uk-article-title uk-heading-divider uk-margin-small">{{title}}</h1>
+			<p class="uk-article-meta uk-margin-remove">Written by {{#primary_author}}
+				<span><a href="{{url}}" title="{{name}}" class="uk-link-reset">{{name}}</a></span>{{/primary_author}} on
 				<time datetime="{{date format="YYYY-MM-DD"}}" content="{{date format="YYYY-MM-DD"}}">
 				{{date format="MMMM, DD YYYY"}}
 				</time>
@@ -26,8 +25,8 @@
 <span data-uk-icon="icon:bookmark;ratio:0.7" class="uk-align-right uk-margin-remove-adjacent uk-text-muted" data-uk-scrollspy="cls:uk-animation-fade;repeat:true"></span>
 {{/if}}
 <h1 class="uk-article-title uk-heading-divider">{{title}}</h1>
-<p class="uk-text-meta uk-margin-medium-bottom"> Written by {{#author}}
-	<span><a href="{{url}}" title="{{name}}" class="uk-text-meta">{{name}}</a></span>{{/author}} on
+<p class="uk-text-meta uk-margin-medium-bottom"> Written by {{#primary_author}}
+	<span><a href="{{url}}" title="{{name}}" class="uk-text-meta">{{name}}</a></span>{{/primary_author}} on
 	<time datetime="{{date published_at format='YYYY-MM-DD'}}" content="{{date published_at format='YYYY-MM-DD'}}">
     {{date published_at format='MMMM, DD YYYY'}}
 	</time>
@@ -43,9 +42,9 @@
 {{> share}}  
 {{> post-next-prev}}
 
-{{#author}}
+{{#primary_author}}
 {{> authorbio}}
-{{/author}}
+{{/primary_author}}
 
 {{!--  Disqus Comments - Uncomment and include your site-id --}}
 {{!--  {{> disqus}}  --}}

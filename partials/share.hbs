@@ -1,10 +1,12 @@
-<hr class="uk-divider-icon uk-margin-medium-top" />
-<section class="uk-container uk-margin-medium">
-<h6 class="uk-h5 uk-text-primary uk-text-center" data-uk-scrollspy="cls: uk-animation-fade;repeat:true;delay:600">Share This Post</h6>
-<div class="uk-container uk-container-center uk-width-1-2@s uk-width-1-3@m uk-flex uk-flex-between">
+<hr class="uk-divider-icon uk-margin-medium" />
+<section class="uk-container ">
+<h6 class="uk-h5 uk-text-muted uk-text-center" data-uk-scrollspy="cls: uk-animation-fade;repeat:true;delay:600">Share This Post</h6>
+<div class="uk-flex uk-flex-middle uk-flex-around uk-padding-small">
 	<a href="https://twitter.com/share?text={{encode title}}&url={{url absolute="true"}}" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;" title="Share on Twitter" target="_blank" rel="nofollow" class="grow" data-uk-icon="icon:twitter;ratio: 1.8"><span class="uk-hidden">Twitter</span></a>
 	<a href="https://plus.google.com/share?url={{url absolute="true"}}" onclick="javascript:window.open(this.href, 'google-share', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;" title="Share on Google+" target="_blank" rel="nofollow" class="grow" data-uk-icon="icon:google-plus;ratio: 1.8"><span class="uk-hidden">Google Plus</span></a>
-	{{#if feature_image}}<a href="//pinterest.com/pin/create/link/?url={{url absolute="true"}}&media={{img_url feature_image absolute="true"}}&description={{encode title}}" onclick="window.open(this.href, 'pinterest-share', 'width=550,height=235');return false;" title="Share on Twitter" target="_blank" rel="nofollow" class="grow" data-uk-icon="icon:pinterest;ratio: 1.8"><span class="uk-hidden">Pinterest</span></a>{{/if}}
 	<a href="https://www.facebook.com/sharer/sharer.php?u={{url absolute="true"}}" onclick="window.open(this.href, 'facebook-share', 'width=500,height=296');return false;" title="Share on Facebook" target="_blank" rel="nofollow" class="grow" data-uk-icon="icon:facebook;ratio: 1.8"><span class="uk-hidden">Facebook</span></a>
+	{{#if feature_image}}<a href="//pinterest.com/pin/create/link/?url={{url absolute="true"}}&media={{img_url feature_image absolute="true"}}&description={{encode title}}" onclick="window.open(this.href, 'pinterest-share', 'width=550,height=235');return false;" title="Share on Twitter" target="_blank" rel="nofollow" class="grow" data-uk-icon="icon:pinterest;ratio: 1.8"><span class="uk-hidden">Pinterest</span></a>{{/if}}
+	<a href="#" onclick="" title="Share on Tumblr" target="_blank" rel="nofollow" class="grow" data-uk-icon="icon:tumblr;ratio: 1.8"><span class="uk-hidden">Tumblr</span></a>
+	<a href="#" onclick="" title="Share on LinkedIn" target="_blank" rel="nofollow" class="grow" data-uk-icon="icon:linkedin;ratio: 1.8"><span class="uk-hidden">LinkedIn</span></a>
 </div>      
 </section>      

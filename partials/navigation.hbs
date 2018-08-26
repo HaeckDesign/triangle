@@ -2,8 +2,8 @@
 <nav class="uk-navbar uk-navbar-container uk-navbar-attached" data-uk-navbar>
 <div class="uk-navbar-left">
 {{#if @blog.logo}}
-<a href="{{@blog.url}}" title="{{@blog.title}}" class="uk-navbar-item">
-	<img src="{{@blog.logo}}" alt="{{@blog.title}} Logo" title="{{@blog.title}} Logo" class="uk-logo" />
+<a href="{{@blog.url}}" title="{{@blog.title}}">
+	<img src="{{@blog.logo}}" alt="{{@blog.title}} Logo" title="{{@blog.title}} Logo" class="uk-navbar-item uk-logo" />
 </a>
 {{else}}
 	<a href="{{@blog.url}}" title="{{@blog.title}}" class="uk-navbar-item uk-logo">{{@blog.title}}</a>

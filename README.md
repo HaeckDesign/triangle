@@ -10,24 +10,24 @@ If you like our work - [buy us a beer](https://www.gittip.com/HaeckDesign/), [gi
 
 ## Built with: ##
 
-**Ghost (v1.16):** https://ghost.org/
+**Ghost (v2.0.3):** https://ghost.org/
 
 **CSS**
 
-* UIKit (v3.0.0): http://www.getuikit.com
+* UIKit (v3.0.0 rc10): https://www.getuikit.com
 
 
 **Javascript**  
 
-* UIKit (v3.0.0): http://www.getuikit.com
+* UIKit (v3.0.0 rc10): https://www.getuikit.com
 * IE conditionals: HTML5Shiv, CSS3-Mediaqueries, Selectivizr
 
 
 **Third Party Resources**
 
 * Google Fonts: https://www.google.com/fonts
-* Google Analytics: http://www.google.com/analytics/
-* Disqus: http://www.disqus.com/
+* Google Analytics: https://www.google.com/analytics/
+* Disqus: https://www.disqus.com/
 
 **Images courtesy of...**
 
@@ -43,13 +43,13 @@ If you like our work - [buy us a beer](https://www.gittip.com/HaeckDesign/), [gi
 ![Thumbnail](https://haeck.s3.amazonaws.com/triangle/Triangle-Ghost-Theme-Screenshot-Haeck-Design.jpg)
 
 
-#### Version 0.2 ####
+#### Version 2.0 ####
 
-* UIKit 3.0.0 beta 35
-* Updated for Ghost 1.0
+* UIKit 3.0.0 rc 10
+* Updated for Ghost 2.0
 * Removed JQuery
 
 
-#### Version 0.1 ####
+#### Version 1.0 ####
 
 * Initial Release

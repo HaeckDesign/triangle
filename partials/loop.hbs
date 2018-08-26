@@ -5,10 +5,10 @@
 {{/if}}
 <h3 class="uk-article-title uk-heading-divider uk-margin-small">{{title}}</h3>
 <p class="uk-text-meta uk-margin-small">
-	<span>By: <span class="author">{{author.name}}</span></span> on
+	<span>By: <span class="author">{{primary_author.name}}</span></span> on
 	<time content="{{date published_at format='YYYY-MM-DD'}}" datetime="{{date published_at format='YYYY-MM-DD'}}">{{date published_at format='MM/DD/YYYY'}}</time>
 </p>
-<p>{{excerpt characters="260"}}&hellip;</p>
+<p>{{excerpt characters="360"}}&hellip;</p>
 <a href="{{@blog_url}}{{url}}" title="{{title}}" class="uk-align-right uk-button uk-button-default uk-margin-small-top" data-uk-icon="icon:triangle-right;ratio:0.75">Continue Reading&nbsp;</a>
 </article>
 {{/foreach}}
