@@ -3,7 +3,7 @@
 <div class="uk-navbar-center uk-width-4-5@m">
 	<ul class="uk-navbar-nav uk-flex uk-flex-wrap uk-width-1-1 uk-child-width-1-2@m">
 		<li class="uk-navbar-item uk-text-center">
-			<div><h6 class="uk-margin-remove-bottom uk-margin-small-top">Subscribe to {{@blog.title}}</h6>
+			<div><h6 class="uk-margin-remove-bottom uk-margin-small-top">Subscribe to {{@site.title}}</h6>
 			<div class="uk-navbar-subtitle">Get the latest posts delivered right to your inbox</div>
 			</div>
 		</li>
@@ -17,17 +17,32 @@
 
 <footer class="uk-section uk-section-small uk-background-secondary uk-text-center uk-light uk-clearfix">
 <div class="uk-container uk-width-5-6 uk-width-3-4@s uk-width-2-3@m uk-width-1-2@l uk-flex uk-flex-wrap uk-flex-center uk-flex-between uk-margin-large-top" data-uk-margin itemscope itemtype="http://schema.org/Organization">
-	<a href="#" title="Twitter" target="_blank" rel="nofollow" itemprop="sameAs" data-uk-icon="icon: twitter;ratio: 1.8" class="uk-icon-link grow grow"></a>
-	<a href="#" title="Facebook" target="_blank" rel="nofollow" itemprop="sameAs" data-uk-icon="icon: facebook;ratio: 1.8" class="uk-icon-link grow"></a>
-	<a href="#" title="Pinterest" target="_blank" rel="nofollow" itemprop="sameAs" data-uk-icon="icon: pinterest;ratio: 1.8" class="uk-icon-link grow"></a>
-	<a href="#" title="Github" target="_blank" rel="nofollow" itemprop="sameAs" data-uk-icon="icon: github;ratio: 1.8" class="uk-icon-link grow"></a>
-	<a href="#" title="Tumblr" target="_blank" rel="nofollow" itemprop="sameAs" data-uk-icon="icon: tumblr;ratio: 1.8" class="uk-icon-link grow"></a>
-	<a href="#" title="Youtube" target="_blank" rel="nofollow" itemprop="sameAs" data-uk-icon="icon: youtube;ratio: 1.8" class="uk-icon-link grow"></a>
+	{{#if @site.twitter}}
+	<a href="{{twitter_url}}" title="{{@site.twitter}}" target="_blank" rel="noopener noreferrer" itemprop="sameAs" data-uk-icon="icon: x;ratio: 1.8" class="uk-icon-link grow"><span class="uk-hidden">X</span></a>
+{{/if}}
+{{#if @site.facebook}}
+	<a href="{{facebook_url}}" title="{{@site.facebook}}" target="_blank" rel="noopener noreferrer" itemprop="sameAs" data-uk-icon="icon: facebook;ratio: 1.8" class="uk-icon-link grow"><span class="uk-hidden">Facebook</span></a>
+{{/if}}
+{{#if @custom.pinterest_link}}
+	<a href="{{@custom.pinterest_link}}" title="Pinterest" target="_blank" rel="noopener noreferrer" itemprop="sameAs" data-uk-icon="icon: pinterest;ratio: 1.8" class="uk-icon-link grow"><span class="uk-hidden">Pinterest</span></a>
+{{/if}}
+{{#if @custom.instagram_link}}
+	<a href="{{@custom.instagram_link}}" title="Instagram" target="_blank" rel="noopener noreferrer" itemprop="sameAs" data-uk-icon="icon: instagram;ratio: 1.8" class="uk-icon-link grow"><span class="uk-hidden">Instagram</span></a>
+{{/if}}
+{{#if @custom.tumblr_link}}
+	<a href="{{@custom.tumblr_link}}" title="Tumblr" target="_blank" rel="noopener noreferrer" itemprop="sameAs" data-uk-icon="icon: tumblr;ratio: 1.8" class="uk-icon-link grow"><span class="uk-hidden">Tumblr</span></a>
+{{/if}}
+{{#if @custom.tiktok_link}}
+	<a href="{{@custom.tiktok_link}}" title="TikTok" target="_blank" rel="noopener noreferrer" itemprop="sameAs" data-uk-icon="icon: tiktok;ratio: 1.8" class="uk-icon-link grow"><span class="uk-hidden">TikTok</span></a>
+{{/if}}
+{{#if @custom.youtube_link}}
+	<a href="{{@custom.youtube_link}}" title="Youtube" target="_blank" rel="noopener noreferrer" itemprop="sameAs" data-uk-icon="icon: youtube;ratio: 1.8" class="uk-icon-link grow"><span class="uk-hidden">Youtube</span></a>
+{{/if}}
 </div>
 <div class="uk-container uk-margin-large uk-text-muted" data-uk-margin>
-	<div>&copy; {{date format="YYYY"}} - {{@blog.title}}</div>
+	<div>&copy; {{date format="YYYY"}} - {{@site.title}}</div>
 	<div class="uk-text-small uk-margin-small-top"><a href="https://ghost.org/" title="Ghost | Ghost.org" target="_blank" rel="nofollow" class="uk-text-muted">Published with Ghost</a> &amp; <a href="https://haeckdesign.com/freebies/themes/triangle-ghost-theme" title="Triangle Ghost Theme - Haeck Design" target="_blank" rel="nofollow" class="uk-text-muted">Triangle Ghost Theme</a></div>
-	<div class="uk-margin-small-top"><a href="{{@blog.url}}/sitemap.xml" title="Sitemap - {{@blog.title}}" target="_blank" class="uk-text-muted">Sitemap</a></div>
+	<div class="uk-margin-small-top"><a href="{{@site.url}}/sitemap.xml" title="Sitemap - {{@site.title}}" target="_blank" class="uk-text-muted">Sitemap</a></div>
 </div>
 <a href="#" data-uk-icon="icon:triangle-up;ratio:3" class="grow" data-uk-scroll></a>
 </footer>

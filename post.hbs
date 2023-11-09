@@ -46,8 +46,11 @@
 {{> authorbio}}
 {{/primary_author}}
 
-{{!--  Disqus Comments - Uncomment and include your site-id --}}
-{{!--  {{> disqus}}  --}}
+{{!--  Disqus Comments  --}}
+{{#if @custom.disqus_shortname}}
+{{> disqus}}
+{{/if}}
+{{!-- If using a third-party commenting system insert here --}}
 			
 </article>
 </div>

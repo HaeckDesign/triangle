@@ -1,11 +1,11 @@
 {{!< default}}
 
-{{#if @blog.cover_image}}
-<div class="uk-height-medium uk-background-cover uk-cover-container uk-clearfix" data-uk-parallax="bgy: -180" style="background-image: url('{{@blog.cover_image}}');">
+{{#if @site.cover_image}}
+<div class="uk-height-medium uk-background-cover uk-cover-container uk-clearfix" data-uk-parallax="bgy: -180" style="background-image: url('{{@site.cover_image}}');">
 	<div class="uk-overlay uk-overlay-primary uk-position-cover uk-flex uk-flex-middle uk-flex-center uk-flex-column uk-light uk-text-center">
-		<h1 class="uk-article-title uk-margin-small">{{@blog.title}}</h1>
+		<h1 class="uk-article-title uk-margin-small">{{@site.title}}</h1>
 		<h2 class="uk-text-meta uk-margin-small-top">
-		{{@blog.description}}
+		{{@site.description}}
 		</h2>
 	</div>
 </div>
@@ -15,10 +15,10 @@
 {{else}}
 <div class="uk-section uk-section-secondary uk-section-large uk-clearfix">
 	<div class="uk-flex-middle uk-flex-center uk-flex-column uk-container uk-container-center uk-width-4-5@s uk-width-3-4@m uk-width-3-5@l uk-text-center">
-		<h1 class="uk-heading-primary">{{@blog.title}}</h1>
+		<h1 class="uk-heading-primary">{{@site.title}}</h1>
 		<hr class="uk-divider-icon" />
 		<h2 class="uk-text-meta uk-margin">
-		{{@blog.description}}
+		{{@site.description}}
 		</h2>
 	</div>
 </div>

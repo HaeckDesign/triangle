@@ -1,15 +1,18 @@
-<div data-uk-sticky="sel-target: .uk-navbar-container;cls-active: uk-navbar-sticky">
-<nav class="uk-navbar uk-navbar-container uk-navbar-attached" data-uk-navbar>
+<header data-uk-sticky="sel-target: .uk-navbar-container;cls-active: uk-navbar-sticky" data-uk-header>	
+<div class="uk-navbar-container uk-navbar-primary">
+<div class="uk-container uk-container-large">
+<nav class="uk-navbar" data-uk-navbar>	
+	
 <div class="uk-navbar-left">
-{{#if @blog.logo}}
-<a href="{{@blog.url}}" title="{{@blog.title}}">
-	<img src="{{@blog.logo}}" alt="{{@blog.title}} Logo" title="{{@blog.title}} Logo" class="uk-navbar-item uk-logo" />
+{{#if @site.logo}}
+<a href="{{@site.url}}" title="{{@site.title}}">
+	<img src="{{@site.logo}}" alt="{{@site.title}} Logo" title="{{@site.title}} Logo" class="uk-navbar-item uk-logo" />
 </a>
 {{else}}
-	<a href="{{@blog.url}}" title="{{@blog.title}}" class="uk-navbar-item uk-logo">{{@blog.title}}</a>
+	<a href="{{@site.url}}" title="{{@site.title}}" class="uk-navbar-item uk-logo">{{@site.title}}</a>
 {{/if}}
 </div>
-{{#if @blog.navigation}}
+{{#if @site.navigation}}
 <div class="uk-navbar-right">	
 	<ul class="uk-navbar-nav">
 	{{#foreach navigation}}
@@ -30,3 +33,5 @@
 {{/if}}
 </nav>
 </div>
+</div>
+</header>

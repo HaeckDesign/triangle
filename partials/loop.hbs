@@ -9,7 +9,7 @@
 	<time content="{{date published_at format='YYYY-MM-DD'}}" datetime="{{date published_at format='YYYY-MM-DD'}}">{{date published_at format='MM/DD/YYYY'}}</time>
 </p>
 <p>{{excerpt characters="360"}}&hellip;</p>
-<a href="{{@blog_url}}{{url}}" title="{{title}}" class="uk-align-right uk-button uk-button-default uk-margin-small-top" data-uk-icon="icon:triangle-right;ratio:0.75">Continue Reading&nbsp;</a>
+<a href="{{url absolute="true"}}" title="{{title}}" class="uk-align-right uk-button uk-button-default uk-margin-small-top" data-uk-icon="icon:triangle-right;ratio:0.75">Continue Reading&nbsp;</a>
 </article>
 {{/foreach}}
 

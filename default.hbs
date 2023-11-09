@@ -1,13 +1,13 @@
 <!doctype html>
-<html lang="{{lang}}">
+<html lang="{{@site.locale}}">
 <head>
 <meta charset="utf-8" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <title>{{meta_title}}</title>
 <meta name="HandheldFriendly" content="True">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="apple-touch-icon" href="{{asset "/apple-icon-touch.png"}}">
-<link rel="alternate" href="{{@blog.url}}/rss/" title="{{@blog.title}} » Feed" type="application/rss+xml">
+<link rel="apple-touch-icon" href="{{asset "/apple-touch-icon.png"}}">
+<link rel="alternate" href="{{@site.url}}/rss/" title="{{@site.title}} » Feed" type="application/rss+xml">
 {{!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:700" type="text/css"> --}}
 <link rel="stylesheet" href="{{asset "css/uikit.triangle.min.css"}}" id="base-stylesheet-css" type="text/css">
 {{ghost_head}}
