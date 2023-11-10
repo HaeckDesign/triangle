@@ -18,6 +18,13 @@
 	{{#foreach navigation}}
     	<li class="uk-visible@m {{#if current}}uk-active{{/if}}" role="presentation"><a href="{{url absolute="true"}}" title="{{label}}">{{label}}</a></li>
 	{{/foreach}}
+	
+		<li><a class="uk-icon-link uk-navbar-item" aria-label="Search this site" data-uk-icon="icon: search" data-ghost-search><span class="uk-hidden">Search Icon</span></a></li>	
+
+{{#if @site.members_enabled}}
+	<li><a class="uk-navbar-toggle" aria-label="Sign In" data-uk-icon="icon: lock" href="#/portal/signin" data-portal="signin"><span class="uk-hidden">Sign In</span></a></li>
+{{/if}}
+	
 		<li class="uk-hidden@m">
 		<a class="uk-navbar-toggle" data-uk-navbar-toggle-icon href="#"></a>
 		<div class="uk-navbar-dropdown">

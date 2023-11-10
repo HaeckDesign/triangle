@@ -17,23 +17,23 @@
 
 <footer class="uk-section uk-section-small uk-background-secondary uk-text-center uk-light uk-clearfix">
 <div class="uk-container uk-width-5-6 uk-width-3-4@s uk-width-2-3@m uk-width-1-2@l uk-flex uk-flex-wrap uk-flex-center uk-flex-between uk-margin-large-top" data-uk-margin itemscope itemtype="http://schema.org/Organization">
-	{{#if @site.twitter}}
-	<a href="{{twitter_url}}" title="{{@site.twitter}}" target="_blank" rel="noopener noreferrer" itemprop="sameAs" data-uk-icon="icon: x;ratio: 1.8" class="uk-icon-link grow"><span class="uk-hidden">X</span></a>
-{{/if}}
 {{#if @site.facebook}}
 	<a href="{{facebook_url}}" title="{{@site.facebook}}" target="_blank" rel="noopener noreferrer" itemprop="sameAs" data-uk-icon="icon: facebook;ratio: 1.8" class="uk-icon-link grow"><span class="uk-hidden">Facebook</span></a>
-{{/if}}
-{{#if @custom.pinterest_link}}
-	<a href="{{@custom.pinterest_link}}" title="Pinterest" target="_blank" rel="noopener noreferrer" itemprop="sameAs" data-uk-icon="icon: pinterest;ratio: 1.8" class="uk-icon-link grow"><span class="uk-hidden">Pinterest</span></a>
 {{/if}}
 {{#if @custom.instagram_link}}
 	<a href="{{@custom.instagram_link}}" title="Instagram" target="_blank" rel="noopener noreferrer" itemprop="sameAs" data-uk-icon="icon: instagram;ratio: 1.8" class="uk-icon-link grow"><span class="uk-hidden">Instagram</span></a>
 {{/if}}
-{{#if @custom.tumblr_link}}
-	<a href="{{@custom.tumblr_link}}" title="Tumblr" target="_blank" rel="noopener noreferrer" itemprop="sameAs" data-uk-icon="icon: tumblr;ratio: 1.8" class="uk-icon-link grow"><span class="uk-hidden">Tumblr</span></a>
+{{#if @custom.pinterest_link}}
+	<a href="{{@custom.pinterest_link}}" title="Pinterest" target="_blank" rel="noopener noreferrer" itemprop="sameAs" data-uk-icon="icon: pinterest;ratio: 1.8" class="uk-icon-link grow"><span class="uk-hidden">Pinterest</span></a>
 {{/if}}
 {{#if @custom.tiktok_link}}
 	<a href="{{@custom.tiktok_link}}" title="TikTok" target="_blank" rel="noopener noreferrer" itemprop="sameAs" data-uk-icon="icon: tiktok;ratio: 1.8" class="uk-icon-link grow"><span class="uk-hidden">TikTok</span></a>
+{{/if}}
+{{#if @custom.tumblr_link}}
+	<a href="{{@custom.tumblr_link}}" title="Tumblr" target="_blank" rel="noopener noreferrer" itemprop="sameAs" data-uk-icon="icon: tumblr;ratio: 1.8" class="uk-icon-link grow"><span class="uk-hidden">Tumblr</span></a>
+{{/if}}
+{{#if @site.twitter}}
+	<a href="{{twitter_url}}" title="{{@site.twitter}}" target="_blank" rel="noopener noreferrer" itemprop="sameAs" data-uk-icon="icon: x;ratio: 1.8" class="uk-icon-link grow"><span class="uk-hidden">X</span></a>
 {{/if}}
 {{#if @custom.youtube_link}}
 	<a href="{{@custom.youtube_link}}" title="Youtube" target="_blank" rel="noopener noreferrer" itemprop="sameAs" data-uk-icon="icon: youtube;ratio: 1.8" class="uk-icon-link grow"><span class="uk-hidden">Youtube</span></a>
