@@ -3,7 +3,7 @@
 {{#post}}
 
 {{#if feature_image}}
-<div class="uk-height-medium uk-background-cover uk-cover-container uk-clearfix" data-uk-parallax="bgy: -180" style="background-image: url('{{img_url feature_image}}');">
+<div class="uk-height-medium uk-background-cover uk-cover-container uk-clearfix" data-uk-parallax="bgy: -180" style="background-image: url('{{img_url feature_image size="l"}}');">
 	<div class="uk-overlay uk-overlay-primary uk-position-cover uk-light">
 		<div class="uk-width-4-5@s uk-width-3-4@m uk-width-3-5@l uk-container uk-container-center uk-position-bottom uk-margin-medium-bottom uk-animation-slide-bottom">
 			<h1 class="uk-article-title uk-heading-divider uk-margin-small">{{title}}</h1>
@@ -39,20 +39,29 @@
 {{> tags}}
 {{/if}}
 
-{{> share}}  
-{{> post-next-prev}}
+{{!--  Sharing Buttons  --}}
+{{#if @custom.show_share_buttons}}
+{{> share}}
+{{/if}}
 
+{{!--  Author Bio  --}}
+{{#if @custom.show_author}}
 {{#primary_author}}
 {{> authorbio}}
 {{/primary_author}}
+{{/if}}
 
 {{!--  Disqus Comments  --}}
 {{#if @custom.disqus_shortname}}
 {{> disqus}}
 {{/if}}
-{{!-- If using a third-party commenting system insert here --}}
-			
+
 </article>
 </div>
+
+{{!--  Related Posts  --}}
+{{#if @custom.show_related_posts}}
+{{> post-next-prev}}
+{{/if}}
 
 {{/post}}

@@ -1,44 +1,26 @@
-<header data-uk-sticky="sel-target: .uk-navbar-container;cls-active: uk-navbar-sticky" data-uk-header>	
-<div class="uk-navbar-container uk-navbar-primary">
-<div class="uk-container uk-container-large">
-<nav class="uk-navbar" data-uk-navbar>	
-	
-<div class="uk-navbar-left">
-{{#if @site.logo}}
-<a href="{{@site.url}}" title="{{@site.title}}">
-	<img src="{{@site.logo}}" alt="{{@site.title}} Logo" title="{{@site.title}} Logo" class="uk-navbar-item uk-logo" />
-</a>
-{{else}}
-	<a href="{{@site.url}}" title="{{@site.title}}" class="uk-navbar-item uk-logo">{{@site.title}}</a>
-{{/if}}
-</div>
-{{#if @site.navigation}}
-<div class="uk-navbar-right">	
-	<ul class="uk-navbar-nav">
-	{{#foreach navigation}}
-    	<li class="uk-visible@m {{#if current}}uk-active{{/if}}" role="presentation"><a href="{{url absolute="true"}}" title="{{label}}">{{label}}</a></li>
-	{{/foreach}}
-	
-		<li><a class="uk-icon-link uk-navbar-item" aria-label="Search this site" data-uk-icon="icon: search" data-ghost-search><span class="uk-hidden">Search Icon</span></a></li>	
 
-{{#if @site.members_enabled}}
-	<li><a class="uk-navbar-toggle" aria-label="Sign In" data-uk-icon="icon: lock" href="#/portal/signin" data-portal="signin"><span class="uk-hidden">Sign In</span></a></li>
+{{!--  Primary Menu  --}}
+{{^if isSecondary}}
+{{#foreach navigation}}
+	<li class="uk-visible@m {{#if current}}uk-active{{/if}}" role="presentation"><a href="{{url absolute="true"}}" title="{{label}}">{{label}}</a></li>
+{{/foreach}}
+	<li class="uk-hidden@m">
+	<a class="uk-navbar-toggle" data-uk-navbar-toggle-icon href="#"></a>
+	<div class="uk-navbar-dropdown">
+		<ul class="uk-nav uk-navbar-dropdown-nav">
+		{{#foreach navigation}}
+			<li role="presentation"><a href="{{url absolute="true"}}" title="{{label}}">{{label}}</a></li>
+		{{/foreach}}
+		</ul>
+	</div>
+	</li>
+
+{{else}}
+
+{{!--  Secondary Menu  --}}
+{{#foreach navigation}}
+	<li{{#if current}} class="uk-active"{{/if}}>
+		<a href="{{url absolute="true"}}">{{label}}</a>
+	</li>
+{{/foreach}}
 {{/if}}
-	
-		<li class="uk-hidden@m">
-		<a class="uk-navbar-toggle" data-uk-navbar-toggle-icon href="#"></a>
-		<div class="uk-navbar-dropdown">
-            <ul class="uk-nav uk-navbar-dropdown-nav">
-			{{#foreach navigation}}
-		    	<li role="presentation"><a href="{{url absolute="true"}}" title="{{label}}">{{label}}</a></li>
-			{{/foreach}}
-            </ul>
-        </div>
-		</li>
-	</ul>
-</div>
-{{/if}}
-</nav>
-</div>
-</div>
-</header>

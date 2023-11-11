@@ -36,7 +36,27 @@
     "bugs": "https://github.com/HaeckDesign/triangle/issues",
     "config": {
         "posts_per_page": 6,
+        "image_sizes": {
+            "s": {
+                "width": 400
+            },
+            "m": {
+                "width": 800
+            },
+            "l": {
+                "width": 1600
+            }
+        },
         "custom": {
+            "navigation_layout": {
+                "type": "select",
+                "options": ["Logo on the left", "Logo in the middle"],
+                "default": "Logo on the left"
+            },
+            "enable_search": {
+                "type": "boolean",
+                "default": false
+              },
             "instagram_link": {
                 "type": "text"
             },
@@ -51,6 +71,21 @@
             },
             "youtube_link": {
                 "type": "text"
+            },
+            "show_share_buttons": {
+                "type": "boolean",
+                "default": true,
+                "group": "post"
+            },
+            "show_author": {
+                "type": "boolean",
+                "default": true,
+                "group": "post"
+            },
+            "show_related_posts": {
+                "type": "boolean",
+                "default": true,
+                "group": "post"
             },
             "disqus_shortname": {
                 "type": "text",

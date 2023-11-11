@@ -1,5 +1,6 @@
 
-<hr />
+<section id="relatedposts" class="uk-section uk-section-small uk-section-default">
+<div class="uk-container uk-container-large">
 
 <span class="uk-float-right uk-margin-remove-adjacent uk-text-muted" data-uk-icon="icon:bookmark;ratio:0.65" data-uk-scrollspy="cls:uk-animation-fade"></span>
 <h6 class="uk-h5">Additional Posts</h6>
@@ -9,7 +10,7 @@
 <li>
 <a href="{{url}}" title="{{title}}" class="uk-text-right uk-inline-clip uk-transition-toggle uk-cover-container uk-height-medium uk-width-1-1 uk-height-1-1 uk-box-shadow-small rounded">
 	{{#if feature_image}}
-	<img src="{{img_url feature_image}}" alt="{{title}}" title="{{title}}" class="uk-blend-soft-light rounded" data-uk-cover />
+	<img src="{{img_url feature_image size="s"}}" alt="{{title}}" title="{{title}}" class="uk-blend-soft-light rounded" data-uk-cover>
 	<span class="uk-overlay uk-overlay-primary uk-transition-fade uk-position-cover uk-flex uk-flex-center uk-flex-column uk-light">
 	{{else}}
 	<span class="uk-card uk-card-secondary uk-card-hover uk-position-cover uk-flex uk-flex-center uk-flex-column">
@@ -32,7 +33,7 @@
 <li>
 <a href="{{url}}" title="{{title}}" class="uk-text-left uk-inline-clip uk-transition-toggle uk-cover-container uk-height-medium uk-width-1-1 uk-height-1-1 uk-box-shadow-small rounded">
 	{{#if feature_image}}
-	<img src="{{img_url feature_image}}" alt="{{title}}" title="{{title}}" class="uk-blend-soft-light rounded" data-uk-cover />
+	<img src="{{img_url feature_image size="s"}}" alt="{{title}}" title="{{title}}" class="uk-blend-soft-light rounded" data-uk-cover>
 	<span class="uk-overlay uk-overlay-primary uk-transition-fade uk-position-cover uk-flex uk-flex-center uk-flex-column uk-light">
 	{{else}}
 	<span class="uk-card uk-card-secondary uk-card-hover uk-position-cover uk-flex uk-flex-center uk-flex-column uk-padding">
@@ -53,3 +54,6 @@
 {{/prev_post}}
 </ul>
 </div>
+
+</div>
+</section>

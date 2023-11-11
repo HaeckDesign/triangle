@@ -1,8 +1,8 @@
 <!doctype html>
 <html lang="{{@site.locale}}">
 <head>
-<meta charset="utf-8" />
-<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
 <title>{{meta_title}}</title>
 <meta name="HandheldFriendly" content="True">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,14 +13,50 @@
 {{ghost_head}}
 </head>
 <body class="{{body_class}}">
+
+
+<header data-uk-sticky="sel-target: .uk-navbar-container;cls-active: uk-navbar-sticky" data-uk-header>
+<div class="uk-navbar-container uk-navbar-primary">
+<div class="uk-container uk-container-large">
+<nav class="uk-navbar" data-uk-navbar>	
+	
+<div class="{{#match @custom.navigation_layout "Logo on the left"}}uk-navbar-left{{else}}uk-navbar-center{{/match}}">
+{{#if @site.logo}}
+	<a href="{{@site.url}}" title="{{@site.title}}" class="uk-navbar-item">
+		<img src="{{@site.logo}}" alt="{{@site.title}} Logo" title="{{@site.title}} Logo" class="uk-logo">
+	</a>
+{{else}}
+	<a href="{{@site.url}}" title="{{@site.title}}" class="uk-navbar-item uk-logo">{{@site.title}}</a>
+{{/if}}
+</div>
+
+
+<div class="uk-navbar-right">	
+<ul class="uk-navbar-nav">
 {{navigation}}
+
+{{#if @custom.enable_search}}	
+	<li><a class="uk-icon-link uk-navbar-item" aria-label="Search this site" data-uk-icon="icon: search" data-ghost-search><span class="uk-hidden">Search Icon</span></a></li>	
+{{/if}}
+{{#if @site.members_enabled}}
+	<li><a class="uk-navbar-toggle" aria-label="Sign In" data-uk-icon="icon: lock" href="#/portal/signin" data-portal="signin"><span class="uk-hidden">Sign In</span></a></li>
+{{/if}}
+</ul>
+</div>
+
+</div>
+
+</nav>
+</div>
+</div>
+</header>
+
 {{{body}}}
 {{> footer}}
 <script src="{{asset "js/uikit.min.js"}}"></script>
 <script src="{{asset "js/uikit-icons-triangle.min.js"}}" defer></script>
 {{! Optional Scripts - Refer to notes and use judiciously }}
 {{!-- <script src="{{asset "js/scripts.js"}}" defer></script> --}}
-{{!-- <script src="{{asset "js/analytics.js"}}" async defer></script> --}}
 {{{block "scripts"}}}
 {{ghost_foot}}
 </body>

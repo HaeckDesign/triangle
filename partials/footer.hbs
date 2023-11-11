@@ -1,18 +1,29 @@
-{{#if @labs.subscribers}}
-<nav id="subscribe" class="uk-navbar uk-navbar-container">
-<div class="uk-navbar-center uk-width-4-5@m">
-	<ul class="uk-navbar-nav uk-flex uk-flex-wrap uk-width-1-1 uk-child-width-1-2@m">
-		<li class="uk-navbar-item uk-text-center">
-			<div><h6 class="uk-margin-remove-bottom uk-margin-small-top">Subscribe to {{@site.title}}</h6>
+{{!-- Email subscribe CTA with link --}}
+{{#if @site.members_enabled}}
+<div id="subscribe" class="uk-section uk-section-muted">
+<div class="uk-container uk-container-small">
+	<div class="uk-flex uk-flex-wrap uk-width-1-1 uk-child-width-1-2@m" data-uk-margin>
+		<div><h6 class="uk-margin-remove-bottom uk-margin-small-top">Subscribe to {{@site.title}}</h6>
 			<div class="uk-navbar-subtitle">Get the latest posts delivered right to your inbox</div>
-			</div>
-		</li>
-		<li class="uk-navbar-item">
-		{{subscribe_form form_class="uk-form uk-form-controls uk-flex uk-width-1-1" input_class="uk-input uk-text-center" button_class="uk-button uk-button-primary" placeholder="Email Address"}}
-		</li>
-	</ul>
+		</div>
+		<div>
+			<a class="uk-button uk-button-large uk-button-default uk-width-1-1" href="#/portal/signup" data-portal="signup">Subscribe</a>
+		</div>
+	</div>
 </div>
+</div>
+{{/if}}
+
+{{#if @site.secondary_navigation}}
+<div id="subscribe" class="uk-section uk-section-small uk-section-muted">
+<div class="uk-container uk-container-small">
+<nav class="uk-nav uk-margin-medium" role="navigation" aria-label="Secondary Menu">
+<ul class="uk-subnav uk-subnav-divider uk-flex-center" data-uk-margin>
+{{navigation type="secondary"}}
+</ul>
 </nav>
+</div>
+</div>
 {{/if}}
 
 <footer class="uk-section uk-section-small uk-background-secondary uk-text-center uk-light uk-clearfix">
@@ -39,7 +50,7 @@
 	<a href="{{@custom.youtube_link}}" title="Youtube" target="_blank" rel="noopener noreferrer" itemprop="sameAs" data-uk-icon="icon: youtube;ratio: 1.8" class="uk-icon-link grow"><span class="uk-hidden">Youtube</span></a>
 {{/if}}
 </div>
-<div class="uk-container uk-margin-large uk-text-muted" data-uk-margin>
+<div class="uk-container uk-margin-large uk-text-muted" data-uk-margin>	
 	<div>&copy; {{date format="YYYY"}} - {{@site.title}}</div>
 	<div class="uk-text-small uk-margin-small-top"><a href="https://ghost.org/" title="Ghost | Ghost.org" target="_blank" rel="nofollow" class="uk-text-muted">Published with Ghost</a> &amp; <a href="https://haeckdesign.com/freebies/themes/triangle-ghost-theme" title="Triangle Ghost Theme - Haeck Design" target="_blank" rel="nofollow" class="uk-text-muted">Triangle Ghost Theme</a></div>
 	<div class="uk-margin-small-top"><a href="{{@site.url}}/sitemap.xml" title="Sitemap - {{@site.title}}" target="_blank" class="uk-text-muted">Sitemap</a></div>
