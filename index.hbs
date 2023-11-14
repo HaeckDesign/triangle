@@ -1,7 +1,8 @@
 {{!< default}}
 
 {{#if @site.cover_image}}
-<div class="uk-height-medium uk-background-cover uk-cover-container uk-clearfix" data-uk-parallax="bgy: -180" style="background-image: url('{{@site.cover_image}}');">
+<div class="uk-height-medium uk-cover-container uk-inline-clip uk-clearfix">
+<img src="{{@site.cover_image}}" title="{{@site.title}}" alt="{{@site.title}}" data-uk-parallax="y: 1600">
 	<div class="uk-overlay uk-overlay-primary uk-position-cover uk-flex uk-flex-middle uk-flex-center uk-flex-column uk-light uk-text-center">
 		<h1 class="uk-article-title uk-margin-small">{{@site.title}}</h1>
 		<h2 class="uk-text-meta uk-margin-small-top">

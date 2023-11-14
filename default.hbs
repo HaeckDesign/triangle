@@ -8,7 +8,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="apple-touch-icon" href="{{asset "/apple-touch-icon.png"}}">
 <link rel="alternate" href="{{@site.url}}/rss/" title="{{@site.title}} » Feed" type="application/rss+xml">
-{{!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:700" type="text/css"> --}}
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:700" type="text/css">
 <link rel="stylesheet" href="{{asset "css/uikit.triangle.min.css"}}" id="base-stylesheet-css" type="text/css">
 {{ghost_head}}
 </head>
@@ -16,7 +16,7 @@
 <header data-uk-sticky="sel-target: .uk-navbar-container;cls-active: uk-navbar-sticky" data-uk-header>
 <div class="uk-navbar-container uk-navbar-primary">
 <div class="uk-container uk-container-large">
-<nav class="uk-navbar" data-uk-navbar>
+<nav class="uk-navbar" aria-label="Main" role="navigation" data-uk-navbar>
 <div class="{{#match @custom.navigation_layout "Logo on the left"}}uk-navbar-left{{else}}uk-navbar-center{{/match}}">
 {{#if @site.logo}}
 	<a href="{{@site.url}}" title="{{@site.title}}" class="uk-navbar-item">
@@ -27,13 +27,13 @@
 {{/if}}
 </div>
 <div class="uk-navbar-right">	
-<ul class="uk-navbar-nav">
+<ul id="primarymenu" class="uk-navbar-nav">
 {{navigation}}
 {{#if @custom.enable_search}}	
-	<li><a class="uk-icon-link uk-navbar-item" aria-label="Search this site" data-uk-icon="icon: search" data-ghost-search><span class="uk-hidden">Search Icon</span></a></li>	
+	<li><a class="uk-icon-link uk-navbar-item" aria-label="Search this site" data-uk-icon="icon: search" data-ghost-search><span class="uk-hidden" aria-label="Search">Search Icon</span></a></li>	
 {{/if}}
 {{#if @site.members_enabled}}
-	<li><a class="uk-navbar-toggle" aria-label="Sign In" data-uk-icon="icon: lock" href="#/portal/signin" data-portal="signin"><span class="uk-hidden">Sign In</span></a></li>
+	<li><a class="uk-navbar-toggle" aria-label="Sign In" data-uk-icon="icon: lock" href="#/portal/signin" data-portal="signin"><span class="uk-hidden" aria-label="Sign In">Sign In</span></a></li>
 {{/if}}
 </ul>
 </div>

@@ -1,9 +1,8 @@
 {{!< default}}
-
 {{#if tag.feature_image}}
 
-<div class="uk-cover-container uk-height-medium uk-clearfix">
-<img src="{{tag.feature_image}}" title="{{tag.name}}" alt="{{tag.name}}" data-uk-cover>
+<div class="uk-height-medium uk-cover-container uk-inline-clip uk-clearfix">
+<img src="{{tag.feature_image}}" title="{{tag.name}}" alt="{{tag.name}}" data-uk-parallax="y: 1600">
 	<div class="uk-overlay uk-overlay-primary uk-position-cover uk-flex uk-flex-middle uk-flex-center uk-flex-column uk-light uk-text-center">
 		<h1 class="uk-article-title uk-margin-small">{{tag.name}}</h1>
 		<h2 class="uk-text-meta uk-margin-small-top">

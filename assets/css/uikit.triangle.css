@@ -8882,7 +8882,7 @@ iframe[data-uk-cover] {
 }
 .uk-navbar img.uk-logo {
   max-height: 60px;
-  max-width: 260px;
+  max-width: 280px;
 }
 .uk-navbar-right > .uk-navbar-nav > li > a {
   padding-left: 12px;
@@ -9018,7 +9018,8 @@ iframe[data-uk-cover] {
 article.uk-article > span.uk-scrollspy-inview {
   color: var(--ghost-accent-color);
 }
-#relatedposts {
+#relatedposts,
+#subscribe {
   border-top: 1px solid rgba(0, 0, 0, 0.15);
 }
 @media (min-width: 640px) {
