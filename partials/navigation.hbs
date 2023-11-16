@@ -1,11 +1,10 @@
-
 {{!--  Primary Menu  --}}
 {{^if isSecondary}}
 {{#foreach navigation}}
-	<li class="uk-visible@m {{#if current}}uk-active{{/if}}" role="presentation"><a href="{{url absolute="true"}}" title="{{label}}" role="menuitem">{{label}}</a></li>
+	<li class="uk-visible@m{{#if current}} uk-active{{/if}}" role="presentation"><a href="{{url absolute="true"}}" title="{{label}}" role="menuitem">{{label}}</a></li>
 {{/foreach}}
 	<li class="uk-hidden@m">
-	<a href="#" class="uk-navbar-toggle" aria-label="Toggle Menu" data-uk-navbar-toggle-icon></a>
+	<a href="#" class="uk-navbar-toggle" title="Toggle" aria-label="Toggle Menu" data-uk-navbar-toggle-icon></a>
 	<div class="uk-navbar-dropdown">
 		<ul class="uk-nav uk-navbar-dropdown-nav">
 		{{#foreach navigation}}
@@ -14,13 +13,11 @@
 		</ul>
 	</div>
 	</li>
-
 {{else}}
-
 {{!--  Secondary Menu  --}}
 {{#foreach navigation}}
 	<li{{#if current}} class="uk-active"{{/if}}>
-		<a href="{{url absolute="true"}}">{{label}}</a>
+		<a href="{{url absolute="true"}}" title="{{label}}">{{label}}</a>
 	</li>
 {{/foreach}}
 {{/if}}

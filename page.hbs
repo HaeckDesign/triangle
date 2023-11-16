@@ -4,7 +4,7 @@
 
 {{#match @page.show_title_and_feature_image}}
 {{#if feature_image}}
-<div class="uk-height-medium uk-cover-container uk-inline-clip uk-clearfix">
+<section class="uk-height-medium uk-cover-container uk-inline-clip uk-clearfix">
 <img src="{{img_url feature_image}}" title="{{title}}" alt="{{title}}" data-uk-parallax="y: 1600">
 	<div class="uk-overlay uk-overlay-primary uk-position-cover uk-light">
 		<div class="uk-width-5-6@s uk-width-4-5@m uk-width-3-5@l uk-container uk-container-center uk-position-bottom uk-margin-medium-bottom uk-animation-slide-bottom">
@@ -16,12 +16,12 @@
 			</p>
 		</div>
 	</div>
-</div>
+</section>
 {{/if}}
 {{/match}}
 
 
-<div class="uk-section uk-clearfix shade1">
+<main class="uk-section uk-clearfix shade1">
 <article class="uk-width-5-6@s uk-width-4-5@m uk-width-3-5@l uk-container uk-container-center uk-margin uk-article uk-clearfix {{post_class}}" role="main">
 
 {{#match @page.show_title_and_feature_image}}
@@ -40,6 +40,6 @@
 {{> share}}
 			
 </article>
-</div>
+</main>
 
 {{/post}}

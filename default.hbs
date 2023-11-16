@@ -16,7 +16,7 @@
 <header data-uk-sticky="sel-target: .uk-navbar-container;cls-active: uk-navbar-sticky" data-uk-header>
 <div class="uk-navbar-container uk-navbar-primary">
 <div class="uk-container uk-container-large">
-<nav class="uk-navbar" aria-label="Main" role="navigation" data-uk-navbar>
+<nav class="uk-navbar" aria-label="Main" data-uk-navbar>
 <div class="{{#match @custom.navigation_layout "Logo on the left"}}uk-navbar-left{{else}}uk-navbar-center{{/match}}">
 {{#if @site.logo}}
 	<a href="{{@site.url}}" title="{{@site.title}}" class="uk-navbar-item">
@@ -26,14 +26,14 @@
 	<a href="{{@site.url}}" title="{{@site.title}}" class="uk-navbar-item uk-logo">{{@site.title}}</a>
 {{/if}}
 </div>
-<div class="uk-navbar-right">	
+<div class="uk-navbar-right">
 <ul id="primarymenu" class="uk-navbar-nav">
 {{navigation}}
-{{#if @custom.enable_search}}	
-	<li><a class="uk-icon-link uk-navbar-item" aria-label="Search this site" data-uk-icon="icon: search" data-ghost-search><span class="uk-hidden" aria-label="Search">Search Icon</span></a></li>	
+{{#if @custom.enable_search}}
+	<li><a class="uk-icon-link uk-navbar-item" aria-label="Search this site" data-uk-icon="icon: search" data-ghost-search><span class="uk-hidden">Search Icon</span></a></li>
 {{/if}}
 {{#if @site.members_enabled}}
-	<li><a class="uk-navbar-toggle" aria-label="Sign In" data-uk-icon="icon: lock" href="#/portal/signin" data-portal="signin"><span class="uk-hidden" aria-label="Sign In">Sign In</span></a></li>
+	<li><a class="uk-navbar-toggle" aria-label="Sign In" data-uk-icon="icon: lock" href="#/portal/signin" data-portal="signin"><span class="uk-hidden">Sign In</span></a></li>
 {{/if}}
 </ul>
 </div>

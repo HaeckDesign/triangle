@@ -1,7 +1,6 @@
 {{!< default}}
-
 {{#if @site.cover_image}}
-<div class="uk-height-medium uk-cover-container uk-inline-clip uk-clearfix">
+<section class="uk-height-medium uk-cover-container uk-inline-clip uk-clearfix">
 <img src="{{@site.cover_image}}" title="{{@site.title}}" alt="{{@site.title}}" data-uk-parallax="y: 1600">
 	<div class="uk-overlay uk-overlay-primary uk-position-cover uk-flex uk-flex-middle uk-flex-center uk-flex-column uk-light uk-text-center">
 		<h1 class="uk-article-title uk-margin-small">{{@site.title}}</h1>
@@ -9,12 +8,12 @@
 		{{@site.description}}
 		</h2>
 	</div>
-</div>
+</section>
 <div class="uk-navbar uk-navbar-attached uk-box-shadow-small uk-clearfix">
 	<span data-uk-icon="icon: triangle-down;ratio: 1.4" class="uk-width-1-1 uk-text-center uk-text-muted uk-margin-small-bottom uk-margin-small-top"></span>
 </div>
 {{else}}
-<div class="uk-section uk-section-secondary uk-section-large uk-clearfix">
+<section class="uk-section uk-section-secondary uk-section-large uk-clearfix">
 	<div class="uk-flex-middle uk-flex-center uk-flex-column uk-container uk-container-center uk-width-4-5@s uk-width-3-4@m uk-width-3-5@l uk-text-center">
 		<h1 class="uk-heading-primary">{{@site.title}}</h1>
 		<hr class="uk-divider-icon">
@@ -22,11 +21,11 @@
 		{{@site.description}}
 		</h2>
 	</div>
-</div>
+</section>
 {{/if}}
 
-<div class="uk-section uk-clearfix shade1">
+<main class="uk-section uk-clearfix shade1">
 <div class="uk-container uk-container-center uk-width-4-5@s uk-width-3-4@m uk-width-3-5@l uk-margin-top" role="main">
 {{> "loop"}}
 </div>
-</div>
+</main>
