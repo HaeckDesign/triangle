@@ -12,6 +12,7 @@
 <link rel="stylesheet" href="{{asset "css/uikit.triangle.min.css"}}" id="base-stylesheet-css" type="text/css">
 {{ghost_head}}
 </head>
+
 <body class="{{body_class}}">
 <header data-uk-sticky="sel-target: .uk-navbar-container;cls-active: uk-navbar-sticky" data-uk-header>
 <div class="uk-navbar-container uk-navbar-primary">
@@ -43,9 +44,9 @@
 </header>
 {{{body}}}
 {{> footer}}
+
 <script src="{{asset "js/uikit.min.js"}}"></script>
 <script src="{{asset "js/uikit-icons-triangle.min.js"}}" defer></script>
-{{{block "scripts"}}}
-{{ghost_foot}}
+{{{block "scripts"}}}{{ghost_foot}}
 </body>
 </html>

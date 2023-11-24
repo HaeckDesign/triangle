@@ -1,18 +1,15 @@
 {{!< default}}
-
 {{#post}}
 
 {{#if feature_image}}
 <section class="uk-height-medium uk-cover-container uk-inline-clip uk-width-1-1 uk-clearfix">
-<img src="{{img_url feature_image size="l"}}" alt="{{title}}" title="{{title}}" class="uk-width-1-1" data-uk-parallax="y: 1600">
+<img src="{{img_url feature_image size="l"}}" alt="{{title}}" title="{{title}}" class="uk-width-1-1" data-uk-parallax="y:1200;blur:100;media:@s;">
 	<div class="uk-overlay uk-overlay-primary uk-position-cover uk-light">
 		<div class="uk-width-4-5@s uk-width-3-4@m uk-width-3-5@l uk-container uk-container-center uk-position-bottom uk-margin-medium-bottom uk-animation-slide-bottom">
 			<h1 class="uk-article-title uk-heading-divider uk-margin-small">{{title}}</h1>
 			<p class="uk-article-meta uk-margin-remove">Written by {{#primary_author}}
 				<span><a href="{{url}}" title="{{name}}" class="uk-link-reset">{{name}}</a></span>{{/primary_author}} on
-				<time datetime="{{date format="YYYY-MM-DD"}}" content="{{date format="YYYY-MM-DD"}}">
-				{{date format="MMMM, DD YYYY"}}
-				</time>
+				<time datetime="{{date format="YYYY-MM-DD"}}" content="{{date format="YYYY-MM-DD"}}">{{date format="MMMM, DD YYYY"}}</time>
 			</p>
 		</div>
 	</div>
@@ -28,14 +25,10 @@
 <h1 class="uk-article-title uk-heading-divider">{{title}}</h1>
 <p class="uk-text-meta uk-margin-medium-bottom"> Written by {{#primary_author}}
 	<span><a href="{{url}}" title="{{name}}" class="uk-text-meta">{{name}}</a></span>{{/primary_author}} on
-	<time datetime="{{date published_at format='YYYY-MM-DD'}}" content="{{date published_at format='YYYY-MM-DD'}}">
-    {{date published_at format='MMMM, DD YYYY'}}
-	</time>
+	<time datetime="{{date published_at format='YYYY-MM-DD'}}" content="{{date published_at format='YYYY-MM-DD'}}">{{date published_at format='MMMM, DD YYYY'}}</time>
 </p>	
-{{/if}}	
-
+{{/if}}
 {{content}}
-
 {{#if tags}}
 {{> tags}}
 {{/if}}
@@ -44,7 +37,6 @@
 {{#if @custom.show_share_buttons}}
 {{> share}}
 {{/if}}
-
 {{!--  Author Bio  --}}
 {{#if @custom.show_author}}
 {{#primary_author}}

@@ -20,16 +20,13 @@ The Triangle Ghost theme is built as a solid foundation for any Ghost project. T
 
 ## Built With ##
 
-**CMS Ghost (v5.71.0):**  [Ghost (v5.71.0)](https://ghost.org/)
-
-**CSS:**  [UIKit (v3.17.1)](https://www.getuikit.com)
-
-**Javascript:**  [UIKit (v3.17.1)](https://www.getuikit.com)
-
-**Third Party Resources:**  [Google Fonts](https://www.google.com/fonts), [Disqus](https://www.disqus.com/)
+* **CMS Ghost (v5.71.0):**  [Ghost (v5.71.0)](https://ghost.org/)
+* **CSS:**  [UIKit (v3.17.1)](https://www.getuikit.com)
+* **Javascript:**  [UIKit (v3.17.1)](https://www.getuikit.com)
+* **Third Party Resources:**  [Google Fonts](https://www.google.com/fonts), [Disqus](https://www.disqus.com/)
 
 
-![Thumbnail](https://haeck.s3.amazonaws.com/triangle/Triangle-Ghost-Theme-Screenshot-Haeck-Design.jpg)
+![Triangle Ghost Theme Homepage Demo](https://haeck.s3.amazonaws.com/triangle/Triangle-Ghost-Theme-Screenshot-Haeck-Design.jpg)
 
 
 ## Support Resources ##
