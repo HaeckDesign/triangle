@@ -1,9 +1,8 @@
 {{!< default}}
 {{#post}}
-
 {{#if feature_image}}
-<section class="uk-height-medium uk-cover-container uk-inline-clip uk-width-1-1 uk-clearfix">
-<img src="{{img_url feature_image size="l"}}" alt="{{title}}" title="{{title}}" class="uk-width-1-1" data-uk-parallax="y:1200;blur:100;media:@s;">
+<section class="uk-height-medium uk-cover-container uk-clearfix">
+<img src="{{img_url feature_image size="l"}}" alt="{{title}}" title="{{title}}" data-uk-parallax="y:300;blur:80;media:@s;" data-uk-cover>
 	<div class="uk-overlay uk-overlay-primary uk-position-cover uk-light">
 		<div class="uk-width-4-5@s uk-width-3-4@m uk-width-3-5@l uk-container uk-container-center uk-position-bottom uk-margin-medium-bottom uk-animation-slide-bottom">
 			<h1 class="uk-article-title uk-heading-divider uk-margin-small">{{title}}</h1>
@@ -17,7 +16,7 @@
 {{/if}}	
 
 <main class="uk-section uk-clearfix shade1">
-<article class="uk-width-4-5@s uk-width-3-4@m uk-width-3-5@l uk-container uk-container-center uk-article {{post_class}}" role="main">
+<article class="uk-container uk-container-center uk-width-4-5@s uk-width-3-4@m uk-width-3-5@l uk-article {{post_class}}" role="main">
 {{^if feature_image}}
 {{#if featured}}
 <span data-uk-icon="icon:bookmark;ratio:0.7" class="uk-align-right uk-margin-remove-adjacent uk-text-muted" data-uk-scrollspy="cls:uk-animation-fade;repeat:true"></span>
@@ -37,6 +36,7 @@
 {{#if @custom.show_share_buttons}}
 {{> share}}
 {{/if}}
+
 {{!--  Author Bio  --}}
 {{#if @custom.show_author}}
 {{#primary_author}}
@@ -48,7 +48,6 @@
 {{#if @custom.disqus_shortname}}
 {{> disqus}}
 {{/if}}
-
 </article>
 </main>
 

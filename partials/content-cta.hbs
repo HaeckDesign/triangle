@@ -1,0 +1,18 @@
+{{{html}}}
+<aside class="uk-card uk-card-default uk-card-large uk-card-body uk-card-hover uk-text-center">
+	{{#has visibility="paid"}}
+		<h2 class="uk-text-lead">This post is for paying subscribers only</h2>
+	{{/has}}
+	{{#has visibility="members"}}
+		<h2 class="uk-text-lead">This post is for subscribers only</h2>
+	{{/has}}
+	{{#has visibility="tiers"}}
+		<h2 class="uk-text-lead">This post is for subscribers on the {{tiers}} only</h2>
+	{{/has}}
+	{{#if @member}}
+		<a class="uk-button uk-button-default" title="Upgrade" data-portal="account/plans" style="color:{{accentColor}}">Upgrade your account</a>
+	{{else}}
+		<a class="uk-button uk-button-default" title="Subscribe" data-portal="signup" style="color:{{accentColor}}">Subscribe now</a>
+		<p><small>Already have an account? <a class="uk-link" title="Sign In" data-portal="signin">Sign in</a></small></p>
+	{{/if}}
+</aside>

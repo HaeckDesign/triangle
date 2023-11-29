@@ -1,18 +1,15 @@
 {{!< default}}
-
 {{#post}}
-
 {{#match @page.show_title_and_feature_image}}
 {{#if feature_image}}
-<section class="uk-height-medium uk-cover-container uk-inline-clip uk-width-1-1 uk-clearfix">
-<img src="{{img_url feature_image}}" title="{{title}}" alt="{{title}}" class="uk-width-1-1" data-uk-parallax="y:1200;blur:100;media:@s;">
+
+<section class="uk-height-medium uk-cover-container uk-clearfix">
+<img src="{{img_url feature_image}}" title="{{title}}" alt="{{title}}" data-uk-parallax="y:300;blur:80;media:@s;" data-uk-cover>
 	<div class="uk-overlay uk-overlay-primary uk-position-cover uk-light">
 		<div class="uk-width-5-6@s uk-width-4-5@m uk-width-3-5@l uk-container uk-container-center uk-position-bottom uk-margin-medium-bottom uk-animation-slide-bottom">
 			<h1 class="uk-article-title uk-heading-divider">{{title}}</h1>
 			<p class="uk-article-meta uk-margin-small-top">Written on
-				<time datetime="{{date format="YYYY-MM-DD"}}" content="{{date format="YYYY-MM-DD"}}">
-				{{date format="MMMM, DD YYYY"}}
-				</time>
+				<time datetime="{{date format="YYYY-MM-DD"}}" content="{{date format="YYYY-MM-DD"}}">{{date format="MMMM, DD YYYY"}}</time>
 			</p>
 		</div>
 	</div>
@@ -20,26 +17,19 @@
 {{/if}}
 {{/match}}
 
-
 <main class="uk-section uk-clearfix shade1">
-<article class="uk-width-5-6@s uk-width-4-5@m uk-width-3-5@l uk-container uk-container-center uk-margin uk-article uk-clearfix {{post_class}}" role="main">
-
+<article class="uk-container uk-container-center uk-width-5-6@s uk-width-4-5@m uk-width-3-5@l uk-article {{post_class}}" role="main">
 {{#match @page.show_title_and_feature_image}}
 {{#unless feature_image}}
 	<h1 class="uk-article-title uk-margin-small">{{title}}</h1><hr class="uk-article-divider uk-margin-small">
 	<p class="uk-article-meta uk-margin uk-margin-small-top">Written on
-	  <time datetime="{{date published_at format='YYYY-MM-DD'}}" content="{{date published_at format='YYYY-MM-DD'}}">
-	    {{date published_at format='MMMM, DD YYYY'}}
-	  </time>
+	<time datetime="{{date published_at format='YYYY-MM-DD'}}" content="{{date published_at format='YYYY-MM-DD'}}">{{date published_at format='MMMM, DD YYYY'}}</time>
 	</p>
 {{/unless}}
 {{/match}}
-
 {{content}}
-	
+{{!--  Sharing Buttons  --}}
 {{> share}}
-			
 </article>
 </main>
-
 {{/post}}
