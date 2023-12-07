@@ -8,13 +8,13 @@
 <li>
 <a href="{{url}}" title="{{title}}" class="uk-text-right uk-inline-clip uk-transition-toggle uk-cover-container uk-height-medium uk-width-1-1 uk-height-1-1 uk-box-shadow-small rounded">
 	{{#if feature_image}}
-	<img src="{{img_url feature_image size="s"}}" alt="{{title}}" title="{{title}}" class="uk-blend-soft-light rounded" data-uk-cover>
-	<span class="uk-overlay uk-overlay-primary uk-transition-fade uk-position-cover uk-flex uk-flex-center uk-flex-column uk-light">
+	<img src="{{img_url feature_image size="s"}}" alt="{{title}}" title="{{title}}" class="uk-blend-soft-light rounded uk-transition-scale-up uk-transition-opaque" data-uk-cover>
+	<span class="uk-overlay uk-overlay-primary uk-position-cover uk-flex uk-flex-center uk-flex-column uk-light">
 	{{else}}
 	<span class="uk-card uk-card-secondary uk-card-hover uk-position-cover uk-flex uk-flex-center uk-flex-column">
 	{{/if}}
 	<span class="uk-h4 uk-margin-remove">
-	<span data-uk-icon="icon:triangle-left;ratio:1.6" class="uk-float-left uk-margin-right"></span>{{title}}</span>
+	<span data-uk-icon="icon:triangle-left;ratio:1.8" class="uk-float-left uk-margin-right uk-transition-fade"></span>{{title}}</span>
 	<span class="uk-margin-small-top uk-text-small">{{excerpt words="20"}}&hellip;</span>
 	</span>
 </a>
@@ -31,13 +31,13 @@
 <li>
 <a href="{{url}}" title="{{title}}" class="uk-text-left uk-inline-clip uk-transition-toggle uk-cover-container uk-height-medium uk-width-1-1 uk-height-1-1 uk-box-shadow-small rounded">
 	{{#if feature_image}}
-	<img src="{{img_url feature_image size="s"}}" alt="{{title}}" title="{{title}}" class="uk-blend-soft-light rounded" data-uk-cover>
-	<span class="uk-overlay uk-overlay-primary uk-transition-fade uk-position-cover uk-flex uk-flex-center uk-flex-column uk-light">
+	<img src="{{img_url feature_image size="s"}}" alt="{{title}}" title="{{title}}" class="uk-blend-soft-light rounded uk-transition-scale-up uk-transition-opaque" data-uk-cover>
+	<span class="uk-overlay uk-overlay-primary uk-position-cover uk-flex uk-flex-center uk-flex-column uk-light">
 	{{else}}
 	<span class="uk-card uk-card-secondary uk-card-hover uk-position-cover uk-flex uk-flex-center uk-flex-column uk-padding">
 	{{/if}}
 	<span class="uk-h4 uk-margin-remove">
-	<span data-uk-icon="icon:triangle-right;ratio:1.6" class="uk-float-right uk-margin-left"></span>{{title}}</span>
+	<span data-uk-icon="icon:triangle-right;ratio:1.8" class="uk-float-right uk-margin-left uk-transition-fade"></span>{{title}}</span>
 	<span class="uk-margin-small-top uk-text-small">{{excerpt words="20"}}&hellip;</span>
 	</span>
 </a>
