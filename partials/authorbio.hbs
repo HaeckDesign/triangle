@@ -10,9 +10,11 @@
 	<p class="uk-margin-small">{{bio}}.</p>
 	<a href="{{url}}" title="About {{name}}" class="uk-text-meta uk-display-block uk-margin-small-top">About {{name}}</a>
 {{else}}
-	<p class="uk-margin-small">Read <a href="{{url}}">more posts</a> by this author.</p>
+	<p class="uk-margin-small">Read <a href="{{url}}" title="About {{name}}">more about</a> this author.</p>
 {{/if}}
 	</div>
+
+{{!--  Author Image Conditional  --}}
 {{#if profile_image}}
 	<div class="uk-width-1-5 bioimgframe uk-padding-small">
 		<div class="bioimg">

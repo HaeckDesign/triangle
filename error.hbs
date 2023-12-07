@@ -1,22 +1,20 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<title>{{statusCode}} Error | {{@site.title}}</title>
-<meta name="description" content="{{statusCode}} Error - Sorry that page cannot be found.">
-<meta name="HandheldFriendly" content="True">
-<meta name="MobileOptimized" content="320">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="robots" content="noindex,follow">
-<link rel="apple-touch-icon" href="{{asset "/apple-touch-icon.png"}}">
-<link rel="alternate" href="{{@site.url}}/rss/" title="{{@site.title}} » Feed" type="application/rss+xml">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:700" type="text/css">
-<link rel="stylesheet" href="{{asset "css/uikit.triangle.min.css"}}" id="base-stylesheet-css" type="text/css">
-{{ghost_head}}
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>{{statusCode}} Error | {{@site.title}}</title>
+	<meta name="description" content="{{statusCode}} Error - Sorry that page cannot be found.">
+	<meta name="robots" content="noindex,follow">
+	<meta name="HandheldFriendly" content="True" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="apple-touch-icon" href="{{asset "/apple-touch-icon.png"}}">
+	<link rel="preload" as="style" href="{{asset "css/uikit.triangle.min.css"}}" />
+	<link rel="stylesheet" href="{{asset "css/uikit.triangle.min.css"}}" id="base-stylesheet-css" type="text/css" />
+	{{ghost_head}}
 </head>
 <body class="uk-height-viewport uk-flex uk-flex-middle uk-flex-center uk-background-secondary">
-<main class="uk-width-4-5 uk-width-1-2@s uk-width-1-3@m uk-width-1-4@l uk-box-shadow-bottom">
+<main class="uk-width-4-5 uk-width-1-2@s uk-width-1-3@m uk-width-1-4@l uk-box-shadow-bottom" role="main">
 	<div class="uk-card uk-card-default">
 		{{#if @site.logo}}
 		<div class="uk-card-header uk-card-media-top">

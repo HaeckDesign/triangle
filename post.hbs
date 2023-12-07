@@ -2,7 +2,7 @@
 {{#post}}
 {{#if feature_image}}
 <section class="uk-height-medium uk-cover-container uk-clearfix">
-<img src="{{img_url feature_image size="l"}}" alt="{{title}}" title="{{title}}" data-uk-parallax="y:300;blur:80;media:@s;" data-uk-cover>
+<img src="{{img_url feature_image size="l"}}" alt="{{title}}" title="{{title}}" data-uk-parallax="y:300;blur:80;" data-uk-cover>
 	<div class="uk-overlay uk-overlay-primary uk-position-cover uk-light">
 		<div class="uk-width-4-5@s uk-width-3-4@m uk-width-3-5@l uk-container uk-container-center uk-position-bottom uk-margin-medium-bottom uk-animation-slide-bottom">
 			<h1 class="uk-article-title uk-heading-divider uk-margin-small">{{title}}</h1>
@@ -15,8 +15,8 @@
 </section>
 {{/if}}	
 
-<main class="uk-section uk-clearfix shade1">
-<article class="uk-container uk-container-center uk-width-4-5@s uk-width-3-4@m uk-width-3-5@l uk-article {{post_class}}" role="main">
+<main class="uk-section uk-clearfix shade1" role="main">
+<article class="uk-container uk-container-center uk-width-4-5@s uk-width-3-4@m uk-width-3-5@l uk-article {{post_class}}">
 {{^if feature_image}}
 {{#if featured}}
 <span data-uk-icon="icon:bookmark;ratio:0.7" class="uk-align-right uk-margin-remove-adjacent uk-text-muted" data-uk-scrollspy="cls:uk-animation-fade;repeat:true"></span>
@@ -48,6 +48,17 @@
 {{#if @custom.disqus_shortname}}
 {{> disqus}}
 {{/if}}
+
+{{!--  Native Comments  --}}
+{{#if comments}}
+<hr class="uk-margin-medium-top">
+<span class="uk-float-right uk-margin-remove-adjacent uk-text-muted" data-uk-icon="icon:comment;ratio:0.7" data-uk-scrollspy="cls:uk-animation-fade"></span>
+<h6 class="uk-h5">Comment</h6>
+<div class="rounded-inset uk-width-1-1 uk-container uk-container-center commentme uk-background-secondary">
+<div class="uk-padding">{{comments title="" count=false mode="dark" saturation=80}}</div>
+</div>
+{{/if}}
+
 </article>
 </main>
 

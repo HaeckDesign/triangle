@@ -1,23 +1,25 @@
 {{!< default}}
 {{#author}}
-{{#if cover_image}}
 
-<div class="uk-inline uk-cover-container uk-background-secondary uk-flex uk-flex-center uk-flex-middle uk-clearfix" data-uk-height-viewport="offset-top:true">
+{{!--  Cover Image Conditional  --}}
+{{#if cover_image}}
+<main class="uk-inline uk-cover-container uk-background-secondary uk-flex uk-flex-center uk-flex-middle uk-clearfix" role="main" data-uk-height-viewport="offset-top:true">
 {{#if cover_image}}
 <img src="{{cover_image}}" alt="{{name}} - Background" title="{{name}} - Background" data-uk-cover>
 <div class="uk-overlay-primary uk-position-cover"></div>
 {{/if}}
 
-<section class="uk-width-2-3 uk-width-1-3@s uk-width-1-4@m uk-width-1-5@l" role="main">
+<article class="uk-width-2-3 uk-width-1-3@s uk-width-1-4@m uk-width-1-5@l">
 	<div class="uk-card uk-card-small uk-card-default uk-text-center uk-box-shadow-small">
 
+{{!--  Profile Image Conditional  --}}
 		{{#if profile_image}}
-		<div class="uk-width-1-1 uk-card-media-top uk-background-muted">
-		<img src="{{img_url profile_image}}" alt="{{name}} - Profile Picture" title="{{name}} - Profile Picture">
-		</div>
-		<div class="uk-card-header">
-			<h1 class="uk-card-title uk-margin-remove">{{name}}</h1>
+		<div class="uk-width-1-1 uk-card-media-top uk-background-muted uk-inline uk-cover-container uk-height-max-medium">
+		<img src="{{img_url profile_image}}" alt="{{name}} - Profile Picture" title="{{name}} - Profile Picture" class="uk-width-1-1 uk-object-cover">
+		<figcaption class="uk-card-header uk-overlay uk-overlay-default uk-padding-small uk-position-bottom">
+			<h1 class="uk-h6 uk-margin-remove">{{name}}</h1>
 			<h2 class="uk-text-meta uk-margin-remove">{{location}}</h2>
+		</figcaption>
 		</div>
 		{{else}}
 		<div class="uk-card-header">
@@ -30,17 +32,15 @@
 		<div class="uk-card-footer uk-flex uk-flex-center uk-flex-around">
 		{{#if website}}<a href="{{website}}" title="Website - {{name}}" target="_blank" data-uk-icon="icon:world;ratio:1.1"></a>{{/if}}
 		<a href="{{url}}rss/" title="RSS Feed" target="_blank" data-uk-icon="icon:rss;ratio:1.1"></a>
-		{{#if twitter}}<a href="{{twitter_url}}" data-uk-icon="icon:twitter;ratio:1.1"></a>{{/if}}
-		{{#if facebook}}<a href="{{facebook_url}}" data-uk-icon="icon:facebook;ratio:1.1"></a>{{/if}}
+		{{#if twitter}}<a href="{{twitter_url}}" title="Twitter" target="_blank" rel="nofollow" data-uk-icon="icon:x;ratio:1.1"></a>{{/if}}
+		{{#if facebook}}<a href="{{facebook_url}}" title="Facebook" target="_blank" rel="nofollow" data-uk-icon="icon:facebook;ratio:1.1"></a>{{/if}}
 		</div>
 	</div>
-</section>
-</div>
-
+</article>
+</main>
 {{else}}
-
-<div class="uk-cover-container uk-background-secondary uk-flex uk-flex-center uk-flex-middle uk-clearfix" data-uk-height-viewport="offset-top:true">
-<section class="uk-width-2-3 uk-width-1-3@s uk-width-1-4@m uk-width-1-5@l" role="main">
+<main class="uk-cover-container uk-background-secondary uk-flex uk-flex-center uk-flex-middle uk-clearfix" role="main" data-uk-height-viewport="offset-top:true">
+<article class="uk-width-2-3 uk-width-1-3@s uk-width-1-4@m uk-width-1-5@l">
 	<div class="uk-card uk-card-small uk-card-default uk-text-center uk-box-shadow-small">
 
 		{{#if profile_image}}
@@ -62,11 +62,11 @@
 		<div class="uk-card-footer uk-flex uk-flex-center uk-flex-around">
 		{{#if website}}<a href="{{website}}" title="Website - {{name}}" target="_blank" data-uk-icon="icon:world;ratio:1.1"></a>{{/if}}
 		<a href="{{url}}rss/" title="RSS Feed" target="_blank" data-uk-icon="icon:rss;ratio:1.1"></a>
-		{{#if twitter}}<a href="{{twitter_url}}" data-uk-icon="icon:twitter;ratio:1.1"></a>{{/if}}
-		{{#if facebook}}<a href="{{facebook_url}}" data-uk-icon="icon:facebook;ratio:1.1"></a>{{/if}}
+		{{#if twitter}}<a href="{{twitter_url}}" title="Twitter" target="_blank" rel="nofollow" data-uk-icon="icon:x;ratio:1.1"></a>{{/if}}
+		{{#if facebook}}<a href="{{facebook_url}}" title="Facebook" target="_blank" rel="nofollow" data-uk-icon="icon:facebook;ratio:1.1"></a>{{/if}}
 		</div>
 	</div>
-</section>
-</div>
+</article>
+</main>
 {{/if}}
 {{/author}}

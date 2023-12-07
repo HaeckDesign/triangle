@@ -1,7 +1,9 @@
 {{!< default}}
+
+{{!--  Cover Image Conditional  --}}
 {{#if @site.cover_image}}
 <section class="uk-height-medium uk-cover-container uk-clearfix">
-<img src="{{@site.cover_image}}" title="{{@site.title}}" alt="{{@site.title}}" data-uk-parallax="y:300;blur:80;media:@s;" data-uk-cover>
+<img src="{{@site.cover_image}}" title="{{@site.title}}" alt="{{@site.title}}" data-uk-parallax="y:300;blur:80;" data-uk-cover>
 	<div class="uk-overlay uk-overlay-primary uk-position-cover uk-flex uk-flex-middle uk-flex-center uk-flex-column uk-light uk-text-center">
 		<h1 class="uk-article-title uk-margin-small">{{@site.title}}</h1>
 		<h2 class="uk-text-meta uk-margin-small-top">
@@ -24,8 +26,8 @@
 </section>
 {{/if}}
 
-<main class="uk-section uk-clearfix shade1">
-<div class="uk-container uk-container-center uk-width-5-6@s uk-width-4-5@m uk-width-3-5@l uk-margin-top" role="main">
+<main class="uk-section uk-clearfix shade1" role="main">
+<div class="uk-container uk-container-center uk-width-5-6@s uk-width-4-5@m uk-width-3-5@l uk-margin-top">
 {{> "loop"}}
 </div>
 </main>

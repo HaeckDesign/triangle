@@ -7,7 +7,7 @@ The Triangle Ghost theme is built as a solid foundation for any Ghost project. T
 
 ## Features ##
 
-* **Theme Settings:**  Native Search Icon (navbar), User Signup Icon (navbar), Social Media Links (Facebook, Instagram, Pinterest, TikTok, Tumblr, X, YouTube), Primary (sticky navbar) & Secondary (footer) Menus, Post Page Toggles (Share Buttons, Author Bio, Related Posts), Disqus Comments on Posts
+* **Theme Settings:**  Native Search Icon (navbar), User Signup Icon (navbar), Social Media Links (Facebook, Instagram, Pinterest, TikTok, Tumblr, X, YouTube), Primary (sticky navbar) & Secondary (footer) Menus, Post Page Toggles (Share Buttons, Author Bio, Related Posts), Disqus Comments on Posts, Native Comments on Posts
 * **Fast Loading:**  Minimal Assets (1 css file & 2 js files), Font Based Icons, No Unnecessary Code
 * **Accessibility Focused:**  Fully Responsive, Smart HTML Structure, ARIA Labels, Keyboard Navigation
 * **Easy Customizations:**  Feature Font (change googlefont js & css), Primary & Background Colors (noted in css)
@@ -17,9 +17,9 @@ The Triangle Ghost theme is built as a solid foundation for any Ghost project. T
 ## Built With ##
 
 * **CMS Ghost (v5.71.0):**  [Ghost (v5.71.0)](https://ghost.org/)
-* **CSS:**  [UIKit (v3.17.1)](https://www.getuikit.com)
-* **Javascript:**  [UIKit (v3.17.1)](https://www.getuikit.com)
-* **Third Party Resources:**  [Google Fonts](https://www.google.com/fonts), [Disqus](https://www.disqus.com/)
+* **CSS:**  [UIKit (v3.17.11)](https://www.getuikit.com)
+* **Javascript:**  [UIKit (v3.17.11)](https://www.getuikit.com)
+* **Third Party Resources:**  [Disqus](https://www.disqus.com/)
 
 
 ![Triangle Ghost Theme Homepage Demo](https://haeck.s3.amazonaws.com/triangle/Triangle-Ghost-Theme-Screenshot-Haeck-Design.jpg)
@@ -46,8 +46,10 @@ If you have any problems with this theme, please feel free to submit a bug using
 * Added Secondary Menu in Footer
 * Added Post Toggles (Share Buttons, Author Bio, Related Posts)
 * Added Disqus to Settings
+* Added Native Commenting
 * Removed Google Analytics
 * Updated to meet new Ghost Theme requirements
+* Updated fonts to local
 * Declared MIT License
 
 #### Version 2.0 ####

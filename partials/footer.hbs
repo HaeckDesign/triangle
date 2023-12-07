@@ -15,7 +15,7 @@
 </section>
 {{/if}}
 <footer class="uk-section uk-section-small uk-background-secondary uk-text-center uk-light uk-clearfix">
-<div class="uk-container uk-width-5-6 uk-width-3-4@s uk-width-2-3@m uk-width-1-2@l uk-flex uk-flex-wrap uk-flex-center uk-flex-between uk-margin-large-top" data-uk-margin itemscope itemtype="http://schema.org/Organization">
+<div class="uk-container uk-width-5-6 uk-width-3-4@s uk-width-2-3@m uk-width-1-2@l uk-flex uk-flex-wrap uk-flex-center uk-flex-around uk-margin-large-top" data-uk-margin itemscope itemtype="http://schema.org/Organization">
 {{#if @site.facebook}}
 	<a href="{{facebook_url}}" title="{{@site.facebook}}" target="_blank" rel="noopener noreferrer" itemprop="sameAs" data-uk-icon="icon: facebook;ratio: 1.8" aria-label="Facebook" class="uk-icon-link grow"><span class="uk-hidden" aria-hidden="true">Facebook</span></a>
 {{/if}}
@@ -43,7 +43,7 @@
 	<div class="uk-text-small uk-margin-small-top"><a href="https://ghost.org/" title="Ghost | Ghost.org" target="_blank" rel="nofollow" class="uk-text-muted">Published with Ghost</a> &amp; <a href="https://haeckdesign.com/freebies/themes/triangle-ghost-theme" title="Triangle Ghost Theme - Haeck Design" target="_blank" rel="nofollow" class="uk-text-muted">Triangle Ghost Theme</a></div>
 	<div class="uk-margin-small-top"><a href="{{@site.url}}/sitemap.xml" title="Sitemap - {{@site.title}}" target="_blank" class="uk-text-muted">Sitemap</a></div>
 </div>
-<a href="#" data-uk-icon="icon:triangle-up;ratio:3" class="grow" data-uk-scroll></a>
+<a href="#" title="Top" data-uk-icon="icon:triangle-up;ratio:3" class="grow" data-uk-scroll></a>
 {{#if @site.secondary_navigation}}
 <hr>
 <div id="secondarymenu" class="uk-container uk-container-small uk-margin-top">
