@@ -1,13 +1,13 @@
 # Triangle Ghost Theme #
 
-The Triangle Ghost theme is built as a solid foundation for any [Ghost](https://ghost.org/) project. This theme can serve as a starting point for advanced web developers, while also providing a clean blog design for those who prefer to grow their website organically over time. If you'd like to see the theme in action visit our [Triangle Ghost Theme Demo](https://demo.haeckdesign.com/triangle/). If you're looking to personalize your site we'd recommend starting with the [UIKit Documentation](https://www.getuikit.com), since that is the JS & CSS used with this theme.
+The Triangle Ghost theme is built as a fully-responsive foundation for any [Ghost](https://ghost.org/) project. This theme can serve as a starting point for advanced web developers, while also providing a clean blog design for those who prefer to grow their website organically over time. If you'd like to see the theme in action visit our [Triangle Ghost Theme Demo](https://demo.haeckdesign.com/triangle/). If you're looking to personalize your site we'd recommend starting with the [UIKit Documentation](https://www.getuikit.com), since that is the JS & CSS used with this theme.
 
 ![Triangle Ghost Theme Thumbnail](https://haeck.s3.amazonaws.com/triangle/Triangle-Ghost-Theme-Mockup-Haeck-Design.jpg)
 
 
 ## Features ##
 
-* **Theme Settings:**  Native Search Icon (navbar), User Signup Icon (navbar), Social Media Links (Facebook, Instagram, Pinterest, TikTok, Tumblr, X, YouTube), Primary (sticky navbar) & Secondary (footer) Menus, Post Page Toggles (Share Buttons, Author Bio, Related Posts), Disqus Comments on Posts, Native Comments on Posts
+* **Theme Settings:**  Social Media Links (Facebook, Instagram, Pinterest, TikTok, Tumblr, X, YouTube), Primary (sticky navbar) & Secondary (footer) Menus, Native Search Icon (navbar), User Signup Icon (navbar), Post Page Toggles (Share Buttons, Author Bio, Related Posts), Disqus Comments on Posts, Native Comments on Posts
 * **Fast Loading:**  Minimal Assets (1 css file & 2 js files), Font Based Icons, No Unnecessary Code
 * **Accessibility Focused:**  Fully Responsive, Smart HTML Structure, ARIA Labels, Keyboard Navigation
 * **Easy Customizations:**  Feature Font (change googlefont js & css), Primary & Background Colors (noted in css)
@@ -27,7 +27,7 @@ The Triangle Ghost theme is built as a solid foundation for any [Ghost](https://
 
 ## Support Resources ##
 
-If you have any problems with this theme, please feel free to submit a bug using the links below. If you've never submitted a bug before, heres a solid guide on [submitting a useful bug report](https://about.gitlab.com/blog/2019/01/09/marker-io-gitlab-integration/). If you have a feature request, you can dm us on twitter or include it in a donation note.  Please keep in mind, we are a small team so priority must be given to paying clients and monthly contributors. If you'd like assistance customizing your specific project, feel free to [submit a project request](https://haeckdesign.com/contact) with appropriate details and we can email a rough estimate within a few days. If you like our work - [buy us a coffee](https://www.paypal.com/donate/?hosted_button_id=GLD2VR75PALJS), [give us a follow](https://haeckdesign.com/contact/social), or check out our premium "Golden Triangle" version (coming soon). 
+If you have any problems with this theme, please feel free to submit a bug using the links below. If you've never submitted a bug before, heres a solid guide on [submitting a useful bug report](https://about.gitlab.com/blog/2019/01/09/marker-io-gitlab-integration/). If you have a feature request, you can dm us on twitter or include it in a donation note. Please keep in mind, we are a small team so priority must be given to paying clients and monthly contributors. If you'd like assistance customizing your specific project, feel free to [submit a project request](https://haeckdesign.com/contact) with appropriate details and we can email a rough estimate within a few days. If you like our work - [buy us a coffee](https://www.paypal.com/donate/?hosted_button_id=GLD2VR75PALJS) or [give us a follow](https://haeckdesign.com/contact/social). 
 
 * Project Page:  https://haeckdesign.com/freebies/themes/triangle-ghost-theme
 * Project Wiki: https://gitlab.com/HaeckDesign/triangle-ghost-theme/-/wikis/home
@@ -48,6 +48,7 @@ If you have any problems with this theme, please feel free to submit a bug using
 * Added Post Toggles (Share Buttons, Author Bio, Related Posts)
 * Added Disqus to Settings
 * Added Native Commenting
+* Removed Pinterest Share Button
 * Removed Google Analytics
 * Updated to meet new Ghost Theme requirements
 * Updated fonts to local
