@@ -56,7 +56,11 @@
             "enable_search": {
                 "type": "boolean",
                 "default": false
-              },
+            },
+            "include_pagination": {
+                "type": "boolean",
+                "default": false
+            },
             "instagram_link": {
                 "type": "text"
             },

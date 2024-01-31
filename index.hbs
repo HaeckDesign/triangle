@@ -30,4 +30,9 @@
 <div class="uk-container uk-container-center uk-width-5-6@s uk-width-4-5@m uk-width-3-5@l uk-margin-top">
 {{> "loop"}}
 </div>
+
+{{#if @custom.include_pagination}}
+<div class="uk-container">{{pagination}}</div>
+{{/if}}
+
 </main>
